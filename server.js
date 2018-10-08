@@ -11,7 +11,7 @@ app.use(express.static("public"));
 // Database configuration
 // Save the URL of our database as well as the name of our collection
 var databaseUrl = "drugs";
-var collections = ["specifics"];
+var collections = ["drugs"];
 
 // Use mongojs to hook the database to the db variable
 var db = mongojs(databaseUrl, collections);
@@ -25,7 +25,7 @@ db.on("error", function(error) {
   // 2. At the "/all" path, display every entry in the animals collection
 app.get("/all", function(req, res) {
     // Query: In our database, go to the animals collection, then "find" everything
-    db.specifics.find({}, function(error, found) {
+    db.drugs.find({}, function(error, found) {
       // Log any errors if the server encounters one
       if (error) {
         console.log(error);
