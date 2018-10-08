@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 // Save a reference to the Schema constructor
 const Schema = mongoose.Schema;
 
+// Everyone should be able to import into Robo3T and the mongo shell values with this file. Instructions are included within // tags. 
+
 // Specific types of information needed for this schema
 // (ndcNum, rxNum, pharmName, doctorName , drugName, drugForm, drugFormSize, drugFormMeasure, currentQty, bottleFullQty,
 //     bottlePartialQty, rxWritten, rxFilled, rxDiscard, rxReorder, drugDose, drugFreq, early, middle, late,
