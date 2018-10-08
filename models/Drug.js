@@ -5,6 +5,9 @@ const Schema = mongoose.Schema;
 
 // Everyone should be able to import into Robo3T and the mongo shell values with this file. Instructions are included within // tags. 
 
+// everyone should be able to open terminal in mongo, with mongod in the background and paste these in after the following commands:
+// use drugs. *switched to db drugs*, insert first item, and then db.drugs.find().pretty() and make sure it was inserted correctly, if it was, then continue to insert all the rest of the items.
+
 // Specific types of information needed for this schema
 // (ndcNum, rxNum, pharmName, doctorName , drugName, drugForm, drugFormSize, drugFormMeasure, currentQty, bottleFullQty,
 //     bottlePartialQty, rxWritten, rxFilled, rxDiscard, rxReorder, drugDose, drugFreq, early, middle, late,
@@ -17,8 +20,7 @@ const Schema = mongoose.Schema;
 //     instructions, precautions)
 
 // early, middle, and late, get rid of a time variable and therefor a date setting.
-// everyone should be able to open terminal in mongo, with mongod in the background and paste these in after the following commands:
-// use drugs. *switched to db drugs*, insert first item, and then db.drugs.find().pretty() and make sure it was inserted correctly, if it was, then continue to insert all the rest of the items.
+
 
 db.drugs.insert({"ndcNum":13113, "rxNum":45789, "pharmName":"Walgreens", "doctorName":"Dr. Smith", "drugName":"Amoxicylin", "drugForm":"pill", "drugFormSize":100, "drugFormMeasure":"mg", "currentQty":60, "bottleFullQty":90, "bottlePartialQuantity":45, "rxDiscard":2018-10-07, "rxReorder": 2018-10-04, "drugDose":1, "drugFreq":3, "early":"false", "middle":"false", "late":"true", "instructions":"take with 3 glasses of water", "precautions:":"stay close to a bathroom" })
 

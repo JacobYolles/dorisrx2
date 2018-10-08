@@ -24,7 +24,7 @@ db.on("error", function(error) {
   
   // 2. At the "/all" path, display every entry in the animals collection
 app.get("/all", function(req, res) {
-    // Query: In our database, go to the animals collection, then "find" everything
+    // Query: In our database, go to the drugs collection, then "find" everything
     db.drugs.find({}, function(error, found) {
       // Log any errors if the server encounters one
       if (error) {
