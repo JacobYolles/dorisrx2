@@ -1,4 +1,6 @@
 module.exports = {
-    Drug: require("./drug")
+    Drug: require("./Drug"),
+    Contact: require("./Contacts"),
+    Inventory: require("./Inventory")
   };
   
