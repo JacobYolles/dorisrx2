@@ -136,5 +136,6 @@ const DrugSchema = new Schema({
 // This creates our model from the above schema, using mongoose's model method
 const Drug = mongoose.model("Drug", DrugSchema);
 
+
 // Export the Article model
 module.exports = Drug;
