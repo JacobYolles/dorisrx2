@@ -1,7 +1,7 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 // Save a reference to the Schema constructor
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 // Specific types of information needed for this schema
 // (ndcNum, rxNum, pharmName, doctorName , drugName, drugForm, drugFormSize, drugFormMeasure, currentQty, bottleFullQty,
@@ -44,7 +44,7 @@ db.drugs.insert({"ndcNum":12347, "rxNum":14321, "pharmName":"RiteAid #10", "doct
 
 // Using the Schema constructor, create a new UserSchema object
 // This is similar to a Sequelize model
-var DrugSchema = new Schema({
+const DrugSchema = new Schema({
     ndcNum: {
         type: Number,
         required: true
@@ -130,7 +130,7 @@ var DrugSchema = new Schema({
 // NOTE: Does anything want to have associated popups that occur at specific times? If so what? and where to attach them?
 
 // This creates our model from the above schema, using mongoose's model method
-var Drug = mongoose.model("Drug", DrugSchema);
+const Drug = mongoose.model("Drug", DrugSchema);
 
 // Export the Article model
 module.exports = Drug;
