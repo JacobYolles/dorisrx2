@@ -5,6 +5,14 @@ export default {
     getDrugs: function() {
       return axios.get("/api/drug");
     },
+
+    getInventory: function() {
+      return axios.get("/api/inventory")
+    },
+
+    saveInventory: function(inventoryData) {
+      return axios.get("api/inventory", inventoryData)
+    },
     // Gets the drug with the given id
     getDrug: function(id) {
       return axios.get("/api/drug/" + id);

@@ -14,8 +14,8 @@ const NavTabs = () => (
         </a>
 
 
-         <a className="navbar-brand" href="/input">
-      Input
+         <a className="navbar-brand" href="/Userinput">
+      User Input
         </a>
 
 
