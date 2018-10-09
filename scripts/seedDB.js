@@ -355,9 +355,9 @@ db.Drug
 
 // the collection is "contacts"
 
-db.Contacts
+db.Contact
     .remove({})
-    .then(() => db.Contacts.collection.insertMany(ContactsSeed))
+    .then(() => db.Contact.collection.insertMany(ContactsSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
