@@ -26,3 +26,4 @@ export default {
       return axios.post("/api/drug", drugData);
     }
   };
+
