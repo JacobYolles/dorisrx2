@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 
 //use contacts,
 
-db.contacts.insert({"pharmName":"Walgreens", "doctorName":"Dr. Matlock", "address":"789 South Southern Street", "city":"Littleton", "state":"CO", "zip":80128, "locationId":"RAF777", "email":"drmatlock@msnbc.com", "phone":"720-555-5555"})
+// db.contacts.insert({"pharmName":"Walgreens", "doctorName":"Dr. Matlock", "address":"789 South Southern Street", "city":"Littleton", "state":"CO", "zip":80128, "locationId":"RAF777", "email":"drmatlock@msnbc.com", "phone":"720-555-5555"})
 
-db.contacts.insert({"pharmName":"Walgreens", "doctorName":"Dr. Jones", "address":"789 South Southern Street", "city":"Denver", "state":"CO", "zip":80220, "locationId":"RAF777", "email":"drjones@msnbc.com", "phone":"720-555-5555"})
+// db.contacts.insert({"pharmName":"Walgreens", "doctorName":"Dr. Jones", "address":"789 South Southern Street", "city":"Denver", "state":"CO", "zip":80220, "locationId":"RAF777", "email":"drjones@msnbc.com", "phone":"720-555-5555"})
 // INSERT INTO contacts
 //     (pharmName, doctorName, address, city, state, zip, locationId, email, phone)
 
