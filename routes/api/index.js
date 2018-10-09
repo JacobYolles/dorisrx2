@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const drugRoutes = require("./drug");
-const contactRoutes = require("./contact")
+const drugRoutes = require("./Drug");
+const contactRoutes = require("./Contact")
 const inventoryRoutes = require("./Inventory")
 
 // All routes
-router.use("/drugs", drugRoutes);
+router.use("/drug", drugRoutes);
 router.use("/contact", contactRoutes)
 router.use("/inventory", inventoryRoutes)
 

@@ -18,11 +18,11 @@ const Schema = mongoose.Schema;
 
 // use inventory, then paste into and hit enter up to 2x. in robo 3t you will see the inventory db created with these data points.
 
-db.inventory.insert({"drugName":"Lipitor", "bottleFullQuantity":70, "bottlePartialQuantity":40, "drugDose":"30mg", "drugFrequency":2, "bottleCount":1})
+// db.inventory.insert({"drugName":"Lipitor", "bottleFullQuantity":70, "bottlePartialQuantity":40, "drugDose":"30mg", "drugFrequency":2, "bottleCount":1})
 
-db.inventory.insert({"drugName":"Melatonin", "bottleFullQuantity":80, "bottlePartialQuantity":50, "drugDose":"10mg", "drugFrequency":1, "bottleCount":1})
+// db.inventory.insert({"drugName":"Melatonin", "bottleFullQuantity":80, "bottlePartialQuantity":50, "drugDose":"10mg", "drugFrequency":1, "bottleCount":1})
 
-db.inventory.insert({"drugName":"Adderol", "bottleFullQuantity":30, "bottlePartialQuantity":15, "drugDose":"20mg", "drugFrequency":2, "bottleCount":1})
+// db.inventory.insert({"drugName":"Adderol", "bottleFullQuantity":30, "bottlePartialQuantity":15, "drugDose":"20mg", "drugFrequency":2, "bottleCount":1})
 
 
 
@@ -47,10 +47,7 @@ const InventorySchema = new Schema({
         type: Number,
         required: true
     },
-    bottleCount: {
-        type: Number,
-        required: true
-    }, 
+
 
 })
 
