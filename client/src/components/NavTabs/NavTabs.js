@@ -10,7 +10,11 @@ const NavTabs = () => (
         </a>
 
       <a className="navbar-brand" href="/caregiver">
-      User/Admin
+      Admin
+        </a>
+        
+        <a className="navbar-brand" href="/user">
+      User
         </a>
 
 

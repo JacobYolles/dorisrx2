@@ -1,4 +1,6 @@
 import axios from "axios";
+const BASEURL = "https://api.fda.gov/drug/label.json?search=openfda.brand_name:";
+
 
 export default {
     // Gets all drugs
@@ -16,5 +18,8 @@ export default {
     // Saves a drug to the database
     saveDrug: function(drugData) {
       return axios.post("/api/drug", drugData);
+    },
+    searchFDA: function(drugName){
+      return axios.get(BASEURL + drugName);
     }
   };
