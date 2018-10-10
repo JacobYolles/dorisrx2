@@ -1,30 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./NavTabs.css"
 
 
 const NavTabs = () => (
 
 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
-        Log In
+        Log In / Out
         </a>
 
-      <a className="navbar-brand" href="/caregiver">
+      {/* <a className="navbar-brand" href="/caregiver">
       Admin
-        </a>
+        </a> */}
 
-              <a className="navbar-brand" href="/user">
+              {/* <a className="navbar-brand" href="/user">
       User
+        </a> */}
+
+
+         <a className="navbar-brand" href="/New_Medication">
+      New Medication
         </a>
 
 
-         <a className="navbar-brand" href="/input">
-      Input
-        </a>
-
-
-         <a className="navbar-brand" href="/reports">
-      Daily Report
+         <a className="navbar-brand" href="/Todays_Medication">
+      Today's Medications
         </a>
 
 </nav>
