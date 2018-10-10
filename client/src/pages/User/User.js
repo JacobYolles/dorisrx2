@@ -6,7 +6,8 @@ import API2 from "../../utilities/API2";
 class User extends React.Component {
 
   state = {
-    inventory: []
+    inventory: [],
+    
   }
 
 componentDidMount() {
