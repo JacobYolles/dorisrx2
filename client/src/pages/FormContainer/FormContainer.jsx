@@ -65,10 +65,10 @@ class FormContainer extends Component {
     const key = event.target.name;
 
     this.setState(prevState => ({
-      newUser: {...prevState.newUser, [key]: value}
+      newUser: { ...prevState.newUser, [key]: value }
     }), () => console.log(this.state.newUser))
   }
-  
+
 
   handleFormSubmit(event) {
     event.preventDefault();
@@ -107,78 +107,78 @@ class FormContainer extends Component {
     return (
 
       // <Container>
-        <Row>
-          <Col size="md-12">
-            <Wrapper>
-              <form className="container-fluid form" onSubmit={this.handleFormSubmit}>
+      <Row>
+        <Col size="md-12">
+          <Wrapper>
+            <form className="container-fluid form" onSubmit={this.handleFormSubmit}>
 
-                <Input inputType={"text"}
-                  title={"Full Name"}
-                  name={"name"}
-                  value={this.state.newUser.name}
-                  placeholder={"Enter your name"}
-                  handleChange={this.handleEventChange}
+              <Input inputType={"text"}
+                title={"Full Name"}
+                name={"name"}
+                value={this.state.newUser.name}
+                placeholder={"Enter your name"}
+                handleChange={this.handleEventChange}
 
-                /> {/* Name of the user */}
+              /> {/* Name of the user */}
 
-                <Input inputType={"text"}
-                  title={"Password"}
-                  name={"password"}
-                  value={this.state.newUser.password}
-                  placeholder={"Enter your password"}
-                  handleChange={this.handleEventChange}
+              <Input inputType={"text"}
+                title={"Password"}
+                name={"password"}
+                value={this.state.newUser.password}
+                placeholder={"Enter your password"}
+                handleChange={this.handleEventChange}
 
-                /> {/* Name of the user */}
+              /> {/* Name of the user */}
 
-                <Input inputType={"number"}
-                  name={"age"}
-                  title={"Age"}
-                  value={this.state.newUser.age}
-                  placeholder={"Enter your age"}
-                  handleChange={this.handleEventChange} /> {/* Age */}
+              <Input inputType={"number"}
+                name={"age"}
+                title={"Age"}
+                value={this.state.newUser.age}
+                placeholder={"Enter your age"}
+                handleChange={this.handleEventChange} /> {/* Age */}
 
 
-                <Select title={"Gender"}
-                  name={"gender"}
-                  options={this.state.genderOptions}
-                  value={this.state.newUser.gender}
-                  placeholder={"Select Gender"}
-                  handleChange={this.handleEventChange}
-                /> {/* Age Selection */}
+              <Select title={"Gender"}
+                name={"gender"}
+                options={this.state.genderOptions}
+                value={this.state.newUser.gender}
+                placeholder={"Select Gender"}
+                handleChange={this.handleEventChange}
+              /> {/* Age Selection */}
 
-                <CheckBox title={"Skills"}
-                  name={"skills"}
-                  options={this.state.skillOptions}
-                  selectedOptions={this.state.newUser.skills}
-                  handleChange={this.handleEventChange}
-                /> {/* Skill */}
+              <CheckBox title={"Skills"}
+                name={"skills"}
+                options={this.state.skillOptions}
+                selectedOptions={this.state.newUser.skills}
+                handleChange={this.handleEventChange}
+              /> {/* Skill */}
 
-                <TextArea
-                  title={"About you."}
-                  rows={10}
-                  value={this.state.newUser.about}
-                  name={"currentPetInfo"}
-                  handleChange={this.handleEventChange}
-                  placeholder={"Describe your past experience and skills"} />{/* About you */}
+              <TextArea
+                title={"About you."}
+                rows={10}
+                value={this.state.newUser.about}
+                name={"currentPetInfo"}
+                handleChange={this.handleEventChange}
+                placeholder={"Describe your past experience and skills"} />{/* About you */}
 
-                <Button
-                  action={this.handleFormSubmit}
-                  type={"primary"}
-                  title={"Submit"}
-                  style={buttonStyle}
-                /> { /*Submit */}
+              <Button
+                action={this.handleFormSubmit}
+                type={"primary"}
+                title={"Submit"}
+                style={buttonStyle}
+              /> { /*Submit */}
 
-                <Button
-                  action={this.handleClearForm}
-                  type={"secondary"}
-                  title={"Clear"}
-                  style={buttonStyle}
-                /> {/* Clear the form */}
+              <Button
+                action={this.handleClearForm}
+                type={"secondary"}
+                title={"Clear"}
+                style={buttonStyle}
+              /> {/* Clear the form */}
 
-              </form>
-            </Wrapper>
-          </Col>
-        </Row>
+            </form>
+          </Wrapper>
+        </Col>
+      </Row>
       // </Container>
 
     );

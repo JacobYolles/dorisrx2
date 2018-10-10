@@ -9,22 +9,22 @@ const NavTabs = () => (
         Log In
         </a>
 
-      <a className="navbar-brand" href="/caregiver">
+      {/* <a className="navbar-brand" href="/caregiver">
       Admin
-        </a>
+        </a> */}
 
-              <a className="navbar-brand" href="/user">
+              {/* <a className="navbar-brand" href="/user">
       User
+        </a> */}
+
+
+         <a className="navbar-brand" href="/New_Medication">
+         New Medication
         </a>
 
 
-         <a className="navbar-brand" href="/Userinput">
-      User Input
-        </a>
-
-
-         <a className="navbar-brand" href="/reports">
-      Daily Report
+         <a className="navbar-brand" href="/Todays_Medication">
+         Todays Medication
         </a>
 
 </nav>
