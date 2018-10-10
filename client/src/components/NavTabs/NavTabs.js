@@ -17,6 +17,9 @@ const NavTabs = () => (
       User
         </a> 
 
+        <a className="navbar-brand" href="/reports">
+      Reports
+        </a> 
 
          <a className="navbar-brand" href="/New_Medication">
       New Medication
