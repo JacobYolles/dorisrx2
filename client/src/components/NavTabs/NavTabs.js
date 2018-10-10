@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./NavTabs.css"
 
 
 const NavTabs = () => (
 
 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
-        Log In
+        Log In / Out
         </a>
 
       {/* <a className="navbar-brand" href="/caregiver">
@@ -19,12 +19,12 @@ const NavTabs = () => (
 
 
          <a className="navbar-brand" href="/New_Medication">
-         New Medication
+      New Medication
         </a>
 
 
          <a className="navbar-brand" href="/Todays_Medication">
-         Todays Medication
+      Today's Medications
         </a>
 
 </nav>

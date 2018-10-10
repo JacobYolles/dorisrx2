@@ -1,0 +1,9 @@
+.modal-content {
+    margin-top: 175px;
+    
+}
+
+#modalButtons {
+    display: flex;
+    justify-content: flex-start;
+}

@@ -19,7 +19,7 @@ const App = () => (
               <Col size="md-6">
                 <Route exact path="/" component={Authentication} />
                 {/* <Route path="/User" component={User} /> */}
-                <Route path="/caregiver" component={Caregiver} />
+                {/* <Route path="/caregiver" component={Caregiver} /> */}
                 <Route exact path="/New_Medication" component={NewMedication} />
                 <Route exact path="/Todays_Medication" component={TodaysMedication} />
               </Col>
