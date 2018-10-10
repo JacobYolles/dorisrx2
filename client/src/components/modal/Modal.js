@@ -3,6 +3,7 @@ import "./modal.css";
 import { Button, Modal } from "react-bootstrap"
 
 
+
 class ModalOne extends Component {
   constructor(props, context) {
     super(props, context);
@@ -19,15 +20,15 @@ class ModalOne extends Component {
   }
   render(props) {
     return (
-      <div className="modal-container" style={{ height: 200 }}>
+
+      <div className="modal-container">
 
         <Modal
           show={this.state.show}
-          onHide={this.handleHide}
           container={this}
           aria-labelledby="contained-modal-title"
         >
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title id="contained-modal-title">
               Welcome to DorisRx
                 </Modal.Title>
@@ -38,7 +39,11 @@ class ModalOne extends Component {
 
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleHide}>Log In</Button>
+            <div id ="modalButtons">
+              <Button onClick={this.handleHide} href = "/reports">Log In</Button>
+              <Button onClick={this.handleHide} href = "/caregiver">New User</Button>
+            </div>
+
           </Modal.Footer>
         </Modal>
       </div>

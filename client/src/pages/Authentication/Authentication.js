@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Input from "../../components/input"
 import Modal from "../../components/modal"
-import "./modal.css"
+import "./Authentication.css"
+
 
 
 const styles = {
@@ -10,10 +11,6 @@ const styles = {
     width: 500,
     margin: "auto",
   },
-
-  modal: {
-    backgroundColor: "black"
-  }
 
 }
 
@@ -41,18 +38,8 @@ class Authentication extends Component {
   }
 
   handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    // if (!this.state.firstName || !this.state.lastName) {
-    //   alert("Fill out your first and last name please!");
-    // } else if (this.state.password.length < 6) {
-    //   alert(
-    //     `Choose a more secure password ${this.state.firstName} ${this.state
-    //       .lastName}`
-    //   );
-    // } else {
-    //   alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
-    // }
+
 
     this.setState({
       firstName: "",
@@ -61,12 +48,10 @@ class Authentication extends Component {
     });
   };
 
-
-
   render() {
     return (
 
-      <Modal style={styles.modal} className="modalOne">
+      <Modal>
         {
           <form style={styles.form} >
 
@@ -91,7 +76,6 @@ class Authentication extends Component {
               type="password"
               placeholder="Password"
             />
-            {/* <button onClick={this.handleFormSubmit}>Submit</button> */}
 
           </form>
         }
