@@ -3,14 +3,14 @@ const db = require("../models");
 
 // This file empties the Drugs collection and inserts the Drugs below
 
-// mongoose.connect(
-//     process.env.MONGODB_URI ||
-//     "mongodb://localhost/dorisrx"
-// );
-
 mongoose.connect(
+    process.env.MONGODB_URI ||
     "mongodb://localhost/dorisrx"
-)
+);
+
+// mongoose.connect(
+//     "mongodb://localhost/dorisrx"
+// )
 
 
 const DrugSeed = [
