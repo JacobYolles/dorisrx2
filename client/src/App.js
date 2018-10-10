@@ -19,7 +19,6 @@ const App = () => (
       <Route path="/caregiver" component={Caregiver} />
       <Route exact path="/input" component={Input} />
       <Route exact path="/reports" component={Reports} />
-      <Route exact path="/search" component={search} />
     </div>
   </Router>
 );

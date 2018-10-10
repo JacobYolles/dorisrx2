@@ -9,24 +9,32 @@ import Button from "../../components/button";
 class Reports extends Component {
 
   state = {
-    result: [],
-    search: ""
+    search: "",
+    drugs: [],
+    results: [],
+    error: ""
   };
 
   componentDidMount(){
-    this.searchDrug();
+    API.getBaseDrugsList()
+    .then(res => this.setState({ drugs: res.data }))
+    .catch(err => console.log(err));
   }
 
-  searchDrug = query => {
-    API.searchFDA(query)
-    .then(res => this.setState({ result: res.data }))
-    .catch(err => console.log(err));
-    console.log(this.state);
+  handleInputChange = event => {
+    this.setState({ search: event.target.value });
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchDrug(this.state.search);
+    API.getDataOfDrug(this.state.search)
+    .then(res => {
+      if (res.data.status === "error") {
+        throw new Error(res.data.message);
+      }
+      this.setState({ results: res.data.message, error: ""});
+    })
+    .catch(err => this.setState({ error: err.message }));
   };
 
   render() {
