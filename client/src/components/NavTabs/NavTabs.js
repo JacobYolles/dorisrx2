@@ -9,13 +9,13 @@ const NavTabs = () => (
         Log In / Out
         </a>
 
-      {/* <a className="navbar-brand" href="/caregiver">
+      <a className="navbar-brand" href="/caregiver">
       Admin
-        </a> */}
-
-              {/* <a className="navbar-brand" href="/user">
+        </a> 
+        
+         <a className="navbar-brand" href="/user">
       User
-        </a> */}
+        </a> 
 
 
          <a className="navbar-brand" href="/New_Medication">
