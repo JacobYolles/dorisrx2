@@ -1,5 +1,4 @@
 import axios from "axios";
-const BASEURL = "https://api.fda.gov/drug/label.json?search=openfda.brand_name:";
 
 
 export default {
@@ -20,6 +19,7 @@ export default {
       return axios.post("/api/drug", drugData);
     },
     searchFDA: function(drugName){
-      return axios.get(BASEURL + drugName);
+      return axios.get("https://api.fda.gov/drug/label.json?search=openfda.brand_name:" + drugName);
     }
   };
+

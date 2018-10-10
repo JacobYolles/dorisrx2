@@ -13,4 +13,9 @@ router
   .put(drugController.update)
   .delete(drugController.remove);
 
+ 
+
+
+
+
 module.exports = router;
