@@ -27,7 +27,7 @@ const Schema = mongoose.Schema;
 
 
 const InventorySchema = new Schema({
-    drugname: {
+    drugName: {
         type: String,
         required: true
     },
@@ -47,7 +47,10 @@ const InventorySchema = new Schema({
         type: Number,
         required: true
     },
-
+    early: {
+        type: String,
+        default: false,
+    },
 
 })
 

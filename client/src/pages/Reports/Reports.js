@@ -96,3 +96,11 @@ class Reports extends React.Component {
 }
 
 export default Reports;
+
+
+// "react-bootstrap": "^0.32.4",
+//     "reactstrap": "^6.5.0",
+//     "react-native": "^0.57.2",
+//     "react-router-dom": "^4.3.1",
+//     "react-scripts": "2.0.4",
+//     "mongoose": "^5.0.17"
