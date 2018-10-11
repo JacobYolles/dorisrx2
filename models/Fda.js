@@ -7,6 +7,12 @@ const Schema = mongoose.Schema;
 //indications_and_usage" .   "warnings" . "dosage_and_administration"
 
 const FdaSchema = new Schema({
+
+    brand_name: {
+        type: String,
+        required: false
+    },
+
     indications_and_usage: {
         type: String,
         required: true,
