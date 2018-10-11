@@ -5,13 +5,7 @@ import "./Todays_Medication.css";
 // import CheckBox from "../../components/checkBox/CheckBox";
 // import TextArea from "../../components/textArea/TextArea";
 // import Select from "../../components/select/Select";
-<<<<<<< HEAD
 import Button from "../../components/button/Button";
-import Wrapper from "../../components/wrapper/Wrapper";
-=======
-// import Button from "../../components/button/Button";
-import Wrapper from "../../components/wrapper";
->>>>>>> e3721bb071f01da2612056d97d50ccd7cc35b094
 import { Col, Row, Container } from "reactstrap";
 import API2 from "../../utilities/API2";
 import { Link } from "react-router-dom";

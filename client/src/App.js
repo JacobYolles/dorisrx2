@@ -16,19 +16,6 @@ const App = () => (
   <Router>
     <Fragment>
       <NavTabs />
-<<<<<<< HEAD
-      <Container>
-        <Row>
-          <Col>
-            <Route exact path="/" component={Authentication} />
-            {/* <Route path="/User" component={User} /> */}
-            {/* <Route path="/caregiver" component={Caregiver} /> */}
-            <Route exact path="/New_Medication" component={NewMedication} />
-            <Route exact path="/Todays_Medication" component={TodaysMedication} />
-          </Col>
-        </Row>
-      </Container>
-=======
       <Row size="md-12">
         <Col size="md-6">
           <Route exact path="/" component={Authentication} />
@@ -39,7 +26,6 @@ const App = () => (
           <Route exact path="/Todays_Medication" component={TodaysMedication} />
         </Col>
       </Row>
->>>>>>> e3721bb071f01da2612056d97d50ccd7cc35b094
     </Fragment>
   </Router>
 );
