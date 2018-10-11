@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
+// const Schema = mongoose.Schema;
 
 // This file empties the Drugs collection and inserts the Drugs below
 
@@ -30,10 +31,10 @@ const DrugSeed = [
         rxDiscard: "2018-10-07",
         rxReorder: "2018-10-04",
         drugDose: 1,
-        drugFreq: 3,
-        early: false,
+        drugFreq: 1,
+        early: true,
         middle: false,
-        late: true,
+        late: false,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
     },
@@ -52,10 +53,10 @@ const DrugSeed = [
         rxDiscard: "2018-11-07",
         rxReorder: "2018-10-11",
         drugDose: 1,
-        drugFreq: 3,
-        early: false,
+        drugFreq: 1,
+        early: true,
         middle: false,
-        late: true,
+        late: false,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
     },
@@ -74,8 +75,8 @@ const DrugSeed = [
         rxDiscard: "2018-12-07",
         rxReorder: "2018-11-11",
         drugDose: 1,
-        drugFreq: 3,
-        early: false,
+        drugFreq: 1,
+        early: true,
         middle: false,
         late: true,
         instructions: "take with 3 glasses of water",
@@ -97,8 +98,8 @@ const DrugSeed = [
         rxReorder: "2018-10-11",
         drugDose: 1,
         drugFreq: 3,
-        early: false,
-        middle: false,
+        early: true,
+        mid: true,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
@@ -119,8 +120,8 @@ const DrugSeed = [
         rxReorder: "2018-10-11",
         drugDose: 1,
         drugFreq: 3,
-        early: false,
-        middle: false,
+        early: true,
+        mid: true,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
@@ -139,10 +140,10 @@ const DrugSeed = [
         bottlePartialQuantity: 23,
         rxDiscard: "2018-11-07",
         rxReorder: "2018-10-11",
-        drugDose: 1,
-        drugFreq: 3,
-        early: false,
-        middle: false,
+        drugDose: 2,
+        drugFrequency: 2,
+        early: true,
+        mid: false,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
@@ -161,10 +162,10 @@ const DrugSeed = [
         bottlePartialQuantity: 0,
         rxDiscard: "2019-03-07",
         rxReorder: "2018-12-11",
-        drugDose: 1,
-        drugFreq: 3,
-        early: false,
-        middle: false,
+        drugDose: 2,
+        drugFrequency: 2,
+        early: true,
+        mid: false,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
@@ -184,15 +185,15 @@ const DrugSeed = [
         rxDiscard: "2019-06-07",
         rxReorder: "2019-09-11",
         drugDose: 1,
-        drugFreq: 3,
+        drugFrequency: 1,
         early: false,
-        middle: false,
+        mid: false,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
     },
     {
-        ndcNum: "13113",
+        ndcNum: "38-991-23",
         rxNum: "8813S",
         pharmName: "Rite Aid 05",
         doctorName: "Dr. Johnson",
@@ -206,13 +207,57 @@ const DrugSeed = [
         rxDiscard: "2019-06-07",
         rxReorder: "2019-09-11",
         drugDose: 1,
-        drugFreq: 3,
+        drugFrequency: 1,
         early: false,
+        mid: false,
+        late: true,
+        instructions: "take with 3 glasses of water",
+        precautions: "stay close to a bathroom"
+    },
+    {
+        ndcNum: "38-991-23",
+        rxNum: "8813S",
+        pharmName: "Save On 10",
+        doctorName: "Dr. Reese",
+        drugName: "Ramelteon",
+        drugForm: "tablet",
+        drugFormSize: 60,
+        drugFormMeasure: "mg",
+        currentQty: 15,
+        bottleFullQty: 90,
+        bottlePartialQuantity: 0,
+        rxDiscard: "2019-02-02",
+        rxReorder: "2019-03-03",
+        drugDose: 1,
+        drugFreq: 2,
+        early: true,
         middle: false,
         late: true,
         instructions: "take with 3 glasses of water",
         precautions: "stay close to a bathroom"
     },
+    {
+        ndcNum: "38-991-23",
+        rxNum: "8813S",
+        pharmName: "Save On 10",
+        doctorName: "Dr. Reese",
+        drugName: "Ramelteon",
+        drugForm: "tablet",
+        drugFormSize: 60,
+        drugFormMeasure: "mg",
+        currentQty: 15,
+        bottleFullQty: 90,
+        bottlePartialQuantity: 0,
+        rxDiscard: "2019-02-02",
+        rxReorder: "2019-03-03",
+        drugDose: 1,
+        drugFreq: 2,
+        early: true,
+        middle: false,
+        late: true,
+        instructions: "take with 3 glasses of water",
+        precautions: "stay close to a bathroom"
+    }
 
 ];
 
@@ -300,7 +345,28 @@ const ContactsSeed = [
         locationId: "",
         email: "drjekyl@gmail.com",
         phone: "303-123-5000"
+    },
+    {
+        pharmName: "",
+        doctorName: "Dr. Reese",
+        address: "8882 N Wadsworth",
+        city: "Arvada",
+        state: "CO", "zip": 80121,
+        locationId: "",
+        email: "drjekyl@gmail.com",
+        phone: "303-123-5000"
+    },
+    {
+        pharmName: "",
+        doctorName: "Dr. Steele",
+        address: "1225 N Federal",
+        city: "Westminster",
+        state: "CO", "zip": 80121,
+        locationId: "",
+        email: "drSteeles@gmail.com",
+        phone: "303-123-5000"
     }
+
 ];
 
 
@@ -312,30 +378,137 @@ const InventorySeed = [
         drugName: "Amoxicillin",
         bottleFullQuantity: 90,
         bottlePartialQuantity: 45,
-        drugDose: 1,
-        drugFrequency: 2
-    },
-    {
+        drugDose: 2,
+        drugFrequency: 1,
+        early: true,
+        mid: false,
+        late: false,
+        drugForm: "pill",
+        taken: false
+        },
+        {
         drugName: "Allopurinol(Zyloprim)",
         bottleFullQuantity: 90,
-        bottlePartialQuantity: 23,
+        bottlePartialQuantity: 45,
         drugDose: 1,
-        drugFrequency: 3
-    },
-    {
+        drugFrequency: 1,
+        early: true,
+        mid: false,
+        late: false,
+        drugForm: "pill",
+        taken: false
+        },
+        {
         drugName: "Mandol",
         bottleFullQuantity: 90,
-        bottlePartialQuantity: 23,
-        drugDose: 2,
-        drugFrequency: 2
-    },
-    {
-        drugName: "Savella",
-        bottleFullQuantity: 120,
-        bottlePartialQuantity: 23,
+        bottlePartialQuantity: 45,
         drugDose: 1,
-        drugFrequency: 1
-    }
+        drugFrequency: 1,
+        early: true,
+        mid: false,
+        late: false,
+        drugForm: "capsule",
+        taken: false
+        },
+        {
+        drugName: "Savella",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 1,
+        drugFrequency: 2,
+        early: true,
+        mid: true,
+        late: false,
+        drugForm: "Ounce's'",
+        taken: false
+        },
+        {
+        drugName: "Ramelteon",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 2,
+        drugFrequency: 2,
+        early: true,
+        mid: false,
+        late: true,
+        drugForm: "capsule",
+        taken: false
+        },
+        {
+        drugName: "Actigall",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 2,
+        drugFrequency: 2,
+        early: true,
+        mid: false,
+        late: true,
+        drugForm: "pill",
+        taken: false
+        },
+        {
+        drugName: "Gabitril",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 1,
+        drugFrequency: 1,
+        early: false,
+        mid: false,
+        late: true,
+        drugForm: "Ounce's'",
+        taken: false
+        },
+        {
+        drugName: "Retapamulin",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 1,
+        drugFrequency: 2,
+        early: false,
+        mid: true,
+        late: true,
+        drugForm: "Ounce's'",
+        taken: false
+        },
+        {
+        drugName: "Risperidone",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 3,
+        drugFrequency: 1,
+        early: false,
+        mid: false,
+        late: true,
+        drugForm: "pill",
+        taken: false
+        },
+        {
+        drugName: "Rucaparib",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 3,
+        drugFrequency: 1,
+        early: false,
+        mid: false,
+        late: true,
+        drugForm: "pill",
+        taken: false
+        },
+        {
+        drugName: "Seroquel",
+        bottleFullQuantity: 90,
+        bottlePartialQuantity: 45,
+        drugDose: 1,
+        drugFrequency: 1,
+        early: false,
+        mid: false,
+        late: true,
+        drugForm: "capsule",
+        taken: false
+        }
+
+
+
 ];
 
 

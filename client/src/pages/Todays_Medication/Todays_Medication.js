@@ -5,10 +5,11 @@ import "./Todays_Medication.css";
 // import CheckBox from "../../components/checkBox/CheckBox";
 // import TextArea from "../../components/textArea/TextArea";
 // import Select from "../../components/select/Select";
-// import Button from "../../components/button/Button";
+import Button from "../../components/button/Button";
 import Wrapper from "../../components/wrapper/Wrapper";
 import { Col, Row, Container } from "reactstrap";
 import API2 from "../../utilities/API2";
+import { Link } from "react-router-dom";
 
 // import {
 //   Row, Col, Card, CardBlock, Container, CardTitle, CardText
@@ -57,9 +58,9 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
-  // pickImage = (pillType)=> {
+  // pickImage = (drugForm)=> {
   //   let image;
-  //   if(pillType === 'capsule') {
+  //   if(drugForm === 'capsule') {
   //     image = 'images/capsule.png'
   //   }
   //   return image;
@@ -68,41 +69,112 @@ class TodaysMedication extends Component {
 
 
   render() {
+    const early = this.state.inventory.filter(drug => (drug.early === true || drug.early === "true"));
+    const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
+    const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
+    console.log("mid mid", mid);
     return (
-      <Wrapper>
-        {/* <Fragment>
-          <Container fluid> */}
-            <Row>
-              <Col className="test col-md-6">
-              <table>
+
+      <Fragment>
+
+        <Row>
+          <Col className="test col-md-4">
+            <h1 id="jake">early</h1>
+            <table>
+              <thead>
                 <tr>
                   <th className="text-success">Drug Name</th>
-                  <th>Drug Name</th>
+                  <th>Dose</th>
                   <th>Drug Type</th>
                 </tr>
-                {this.state.inventory.map(inventory => (
-                  // <list 
+              </thead>
+              <tbody>
+                {early.map(inventory => (
                   //   key={inventory._id}
-                  //   className="listItem"
-                  // >
-                  //   <div>
-                  //   hey you!  you need to take {inventory.drugDose}<br></br> {inventory.drugName}   pills today! 
 
-              
-                  //   </div>
-                  // </list>
-                  <tr>
-                    <td>{inventory.drugName}</td>
-                    <td>{inventory.drugDose}</td>
-                    {/* <td><img src={this.pickImage(inventory.type)} alt="pill"></img>></td> */}
+                  <tr key={inventory._id}>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                    <td>
+                      <Button
+                        action={this.handleFormSubmit}
+                        type={"primary"}
+                        title={"TAKEN"}
+                      /></td>
                   </tr>
                 ))}
-                </table>
-              </Col>
-            </Row>
-          {/* </Container>
-        </Fragment> */}
-      </Wrapper>
+              </tbody>
+            </table>
+
+          </Col>
+
+          <Col className="test col-md-4">
+            <h1 id="jake">mid</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th className="text-success">Drug Name</th>
+                  <th>Dose</th>
+                  <th>Drug Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mid.map(inventory => (
+                  <tr key={inventory._id}>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                    <td><Button
+                      action={this.handleFormSubmit}
+                      type={"primary"}
+                      title={"TAKEN"}
+                    /></td>
+                  </tr>
+                ))}
+
+              </tbody>
+            </table>
+          </Col>
+          <Col className="test col-md-4">
+            <h1 id="jake">late</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th className="text-success">Drug Name</th>
+                  <th>Dose</th>
+                  <th>Drug Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {late.map(inventory => (
+                  <tr key={inventory._id}>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
+                    <Link
+                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                    <td><Button
+                      action={this.handleFormSubmit}
+                      type={"primary"}
+                      title={"TAKEN"}
+                    /></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+
+      </Fragment>
+
     )
   }
 
