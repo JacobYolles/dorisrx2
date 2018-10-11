@@ -29,6 +29,8 @@ class Detail extends Component {
       
   }
 
+  deleteFdaValue
+
   loadDrugs = () => {
     API.searchFDA() 
     .then(res => {
