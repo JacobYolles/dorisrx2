@@ -130,7 +130,7 @@ const DrugSchema = new Schema({
         type: String,
         required: true
     },
-    FDAinstructions
+
 
 });
 // NOTE: Does anything want to have associated popups that occur at specific times? If so what? and where to attach them?

@@ -1,13 +1,24 @@
 import React from "react";
 import API from "../../utilities/API";
+import API4 from "../../utilities/API4";
 
 
 
 class NewMedication extends React.Component {
 
   state = {
-    drugs: [],
+    drug: [],
   }
+
+  componentDidMount() {
+    this.loadFdaData()
+  }
+
+  // loadFdaData = () => {
+  //   API4.getFdaDataValue(tylenol)
+  // }
+  // .then(API.saveFromFdaToDrugs)
+  // .then(API. )
 
 componentDidMount() {
   // alert("here")
