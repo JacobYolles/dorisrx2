@@ -6,7 +6,7 @@ import "./Todays_Medication.css";
 // import TextArea from "../../components/textArea/TextArea";
 // import Select from "../../components/select/Select";
 // import Button from "../../components/button/Button";
-import Wrapper from "../../components/Wrapper";
+import Wrapper from "../../components/wrapper";
 import { Col, Row, Container } from "reactstrap";
 import API2 from "../../utilities/API2";
 
