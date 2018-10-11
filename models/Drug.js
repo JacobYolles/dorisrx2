@@ -84,7 +84,7 @@ const DrugSchema = new Schema({
     },
     currentQty: {
         type: Number,
-        required: true
+        required: false
     },
     bottleFullQty: {
         type: Number,
@@ -111,24 +111,24 @@ const DrugSchema = new Schema({
         required: true
     },
     early: {
-        type: String,
-        required: true
+        type: Boolean,
+        required: false
     },
     middle: {
-        type: String,
-        required: true
+        type: Boolean,
+        required: false
     },
     late: {
-        type: String,
-        required: true
+        type: Boolean,
+        required: false
     },
     instructions: {
         type: String,
-        required: true
+        required: false,
     },
     precautions: {
         type: String,
-        required: true
+        required: false,
     },
 
 
