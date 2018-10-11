@@ -16,6 +16,7 @@ componentDidMount() {
     inventory: res.data
   }))
   .catch(err => console.log(err))
+
 }
 
 

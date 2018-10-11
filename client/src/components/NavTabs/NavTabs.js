@@ -9,7 +9,7 @@ const NavTabs = () => (
         Log In / Out
         </a>
 
-      <a className="navbar-brand" href="/caregiver">
+      {/* <a className="navbar-brand" href="/caregiver">
       Admin
         </a> 
         
@@ -19,7 +19,7 @@ const NavTabs = () => (
 
         <a className="navbar-brand" href="/reports">
       Reports
-        </a> 
+        </a>  */}
 
          <a className="navbar-brand" href="/New_Medication">
       New Medication
