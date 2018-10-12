@@ -51,6 +51,14 @@ const InventorySchema = new Schema({
         type: String,
         default: false,
     },
+    middle: {
+        type: String,
+        default: false,
+    },
+    late: {
+        type: String,
+        required: false
+    }
 
 })
 
