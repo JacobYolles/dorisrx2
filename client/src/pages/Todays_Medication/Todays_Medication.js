@@ -93,7 +93,7 @@ class TodaysMedication extends Component {
 
                   <tr key={inventory._id}>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
@@ -125,7 +125,7 @@ class TodaysMedication extends Component {
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                      to="/Detail"><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
@@ -155,7 +155,7 @@ class TodaysMedication extends Component {
                 {late.map(inventory => (
                   <tr key={inventory._id}>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                      to="/Detail"><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
