@@ -7,8 +7,10 @@ import "./Todays_Medication.css";
 // import Select from "../../components/select/Select";
 import Button from "../../components/button/Button";
 import { Col, Row, Container } from "reactstrap";
+import API from "../../utilities/API";
 import API2 from "../../utilities/API2";
 import { Link } from "react-router-dom";
+import { Query } from "mongoose";
 
 // import {
 //   Row, Col, Card, CardBlock, Container, CardTitle, CardText
@@ -24,11 +26,11 @@ import { Link } from "react-router-dom";
 // }
 
 class TodaysMedication extends Component {
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
   // component did mount goes below the states.
-  state = {
+  this.state = {
     inventory: [],
     drugname: "",
     bottleFullQuantity: "",
@@ -37,9 +39,13 @@ class TodaysMedication extends Component {
     drugFrequency: "",
   }
 
+  this.handleFormSubmit = this.handleFormSubmit.bind(this);
+}
+
 
   componentDidMount() {
     this.loadInventory();
+    this.loadDrugs();
   }
 
   loadInventory = () => {
@@ -57,6 +63,23 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
+  loadDrugs = () => {
+    API.getDrugs()
+      .then(res =>
+        this.setState({
+          drugs: res.data,
+        })
+      )
+      .catch(err => console.log(err))
+  }
+
+  handleFormSubmit(drugName, quantity, dose) {
+    console.log(drugName);
+    console.log(quantity);
+    console.log(dose);
+    console.log(this.state);
+  }
+
   // pickImage = (drugForm)=> {
   //   let image;
   //   if(drugForm === 'capsule') {
@@ -71,20 +94,21 @@ class TodaysMedication extends Component {
     const early = this.state.inventory.filter(drug => (drug.early === true || drug.early === "true"));
     const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
     const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
-    console.log("mid mid", mid);
+    // console.log("mid mid", mid);
     return (
 
       <Fragment>
 
         <Row>
           <Col className="test col-md-4">
-            <h1 id="jake">early</h1>
-            <table>
+            <h1 id="times">early</h1>
+            <table className="users">
               <thead>
                 <tr>
-                  <th className="text-success">Drug Name</th>
+                  <th>Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -92,17 +116,20 @@ class TodaysMedication extends Component {
                   //   key={inventory._id}
 
                   <tr key={inventory._id}>
+
                     <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+
                     <td>
                       <Button
+                        className="tButton"
                         action={this.handleFormSubmit}
                         type={"primary"}
-                        title={"TAKEN"}
+                        title={"Taken"}
                       /></td>
                   </tr>
                 ))}
@@ -112,28 +139,32 @@ class TodaysMedication extends Component {
           </Col>
 
           <Col className="test col-md-4">
-            <h1 id="jake">mid</h1>
-            <table>
+            <h1 id="times">mid</h1>
+            <table className="users">
               <thead>
                 <tr>
-                  <th className="text-success">Drug Name</th>
+                  <th>Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
+
                     <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+
                     <td><Button
+                      className="tButton"
                       action={this.handleFormSubmit}
                       type={"primary"}
-                      title={"TAKEN"}
+                      title={"Taken"}
                     /></td>
                   </tr>
                 ))}
@@ -142,11 +173,11 @@ class TodaysMedication extends Component {
             </table>
           </Col>
           <Col className="test col-md-4">
-            <h1 id="jake">late</h1>
-            <table>
+            <h1 id="times">late</h1>
+            <table className="users">
               <thead>
                 <tr>
-                  <th className="text-success">Drug Name</th>
+                  <th>Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
                 </tr>
@@ -154,16 +185,19 @@ class TodaysMedication extends Component {
               <tbody>
                 {late.map(inventory => (
                   <tr key={inventory._id}>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugName}</td></Link>
+
+                   <Link
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugDose}</td></Link>
                     <Link
                       to="/New_Medication"><td>{inventory.drugForm}</td></Link>
                     <td><Button
                       action={this.handleFormSubmit}
+
                       type={"primary"}
-                      title={"TAKEN"}
+                      title={"Taken"}
+                      drugName={inventory.drugName}
                     /></td>
                   </tr>
                 ))}

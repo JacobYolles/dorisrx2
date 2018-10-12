@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs/NavTabs";
+import Footer from "./components/Footer/Footer";
 import Authentication from "./pages/Authentication";
 import User from "./pages/User";
 import Reports from "./pages/Reports"
@@ -17,7 +18,8 @@ const App = () => (
   <Router>
     <Fragment>
       <NavTabs />
-      <Row size="md-12">
+      <Container>
+      <Row>
         <Col size="md-6">
           <Route exact path="/" component={Authentication} />
           <Route exact path="/reports" component={Reports} />
@@ -29,6 +31,8 @@ const App = () => (
 
         </Col>
       </Row>
+      </Container>
+      <Footer />
     </Fragment>
   </Router>
 );
