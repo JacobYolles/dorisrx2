@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 /* Import Components */
 import CheckBox from "../components/checkBox/CheckBox";
-import Input from "../components/input/Input";
+import Input from "../components/input/input";
 import TextArea from "../components/textArea/TextArea";
 import Select from "../components/select/Select";
 import Button from "../components/button/Button";
