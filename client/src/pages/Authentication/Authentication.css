@@ -1,3 +1,12 @@
 body {
     background-image: url("https://image.ibb.co/bZ41Op/blue_squares_powerpoint_backgrounds.jpg")
+    
+}
+
+.font {
+    
+    font: 400 30px/.5 'Berkshire Swash', Helvetica, sans-serif;
+    color: #ededed;
+    text-shadow: 2px 2px 0px #2b2b2b , 3px 5px 3px black;
+      
 }

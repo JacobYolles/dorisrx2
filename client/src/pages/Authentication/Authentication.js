@@ -57,17 +57,10 @@ class Authentication extends Component {
 
             <Input
               value={this.state.firstName}
-              name="firstName"
+              name="userName"
               onChange={this.handleInputChange}
               type="text"
-              placeholder="First Name"
-            />
-            <Input
-              value={this.state.lastName}
-              name="lastName"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="Last Name"
+              placeholder="userName"
             />
             <Input
               value={this.state.password}
