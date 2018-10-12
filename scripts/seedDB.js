@@ -1,16 +1,17 @@
 const mongoose = require("mongoose");
 const db = require("../models");
+// const Schema = mongoose.Schema;
 
 // This file empties the Drugs collection and inserts the Drugs below
 
-// mongoose.connect(
-//     process.env.MONGODB_URI ||
-//     "mongodb://localhost/dorisrx"
-// );
-
 mongoose.connect(
+    process.env.MONGODB_URI ||
     "mongodb://localhost/dorisrx"
-)
+);
+
+// mongoose.connect(
+//     "mongodb://localhost/dorisrx"
+// )
 
 
 const DrugSeed = [
@@ -261,7 +262,7 @@ const DrugSeed = [
 ];
 
 
-// // This file empties the Contacts collection and inserts the ContactsSeeds below
+// This file empties the Contacts collection and inserts the ContactsSeeds below
 
 const ContactsSeed = [
     {
@@ -418,7 +419,7 @@ const InventorySeed = [
         early: true,
         mid: true,
         late: false,
-        drugForm: "liquid",
+        drugForm: "Ounce's'",
         taken: false
         },
         {
@@ -454,7 +455,7 @@ const InventorySeed = [
         early: false,
         mid: false,
         late: true,
-        drugForm: "liquid",
+        drugForm: "Ounce's'",
         taken: false
         },
         {
@@ -466,7 +467,7 @@ const InventorySeed = [
         early: false,
         mid: true,
         late: true,
-        drugForm: "liquid",
+        drugForm: "Ounce's'",
         taken: false
         },
         {
@@ -525,7 +526,7 @@ db.Drug
         process.exit(1);
     });
 
-// // the collection is "contacts"
+// the collection is "contacts"
 
 db.Contact
     .remove({})

@@ -1,0 +1,502 @@
+Script started on Wed Oct 10 19:43:03 2018
+bash: __git_ps1: command not found
+[?1034h[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ 
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ 
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ 
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ 
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js[1PDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedDb.jssDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ npi i
+bash: npi: command not found
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ npm o[Ki
+[?25l⸨[90m░░░░░░░░░░░░░░░░░░[0m⸩ ⠦ rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 6feb172ef4a9a63[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠴ loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loa[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yarn: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:jsonify: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m    [27m[90m░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:update-notifier: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:kind-of: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:to-regex: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:util-deprecate: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠹ diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠇ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠸ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K[K[?25h
+> mern@1.0.0 install /Users/Admin/Desktop/code/dorisrx
+> cd client && npm install
+
+[?25l⸨[90m░░░░░░░░░░░░░░░░░░[0m⸩ ⠦ rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m da5dc4f22abe12f[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠴ loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loa[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yarn: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:is-buffer: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:readable-stream: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yargs: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:to-fast-properties: [7msill[0m [35minstall[0m loadAllDepsInto[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:babel-types: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:signal-exit: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:lodash: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:@babel/plugin-syntax-class-properties: [7msill[0m [35minst[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:bser: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:use: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:is-descriptor: [7msill[0m [35minstall[0m loadAllDepsIntoIdeal[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:util-deprecate: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:pretty-format: [7msill[0m [35minstall[0m loadAllDepsIntoIdeal[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:unicode-match-property-value-ecmascript: [7msill[0m [35min[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:escape-string-regexp: [7msill[0m [35minstall[0m loadAllDepsIn[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:workbox-webpack-plugin: [7msill[0m [35minstall[0m loadAllDeps[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:svgo: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:verror: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:json5: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:source-list-map: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:through: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:uglify-js: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:jest-regex-util: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:ansi-styles: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss-unique-selectors: [7msill[0m [35minstall[0m loadAllDe[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss-value-parser: [7msill[0m [35minstall[0m loadAllDepsIn[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:uniqs: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:eslint-visitor-keys: [7msill[0m [35minstall[0m loadAllDepsInt[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:lodash: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:@babel/types: [7msill[0m [35minstall[0m loadAllDepsIntoIdealT[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:through: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:run-queue: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:acorn: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:randomfill: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:worker-farm: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:to-regex: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:to-regex-range: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:uuid: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:react-transition-group: [7msill[0m [35minstall[0m loadAllDeps[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠹ diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠇ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠇ prepare:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~prepare: d[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠹ prepare:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~prepare: d[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m @babel/plugin-check-constants@7.0.0-beta.38 requires a peer of @babel/core@7.0.0-beta.38 but none is installed. You must install peer dependencies yourself.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m ajv-keywords@3.2.0 requires a peer of ajv@^6.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m react-native@0.57.2 requires a peer of react@16.5.0 but none is installed. You must install peer dependencies yourself.
+[0m
+[?25l⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K[K[?25haudited 48593 packages in 12.222s
+found [92m0[0m vulnerabilities
+
+[?25l⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠇ prepare:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~prepare: mern@1.[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mern@1.0.0 No repository field.
+[0m
+audited 2574 packages in 14.349s
+found [92m0[0m vulnerabilities
+
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ npm ii[C[Code seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedsDb.js[1PDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedDb.js[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+README.md		node_modules		server.js
+READMEDORIS.md		package-lock.json	typescript
+client			package.json		yarn.lock
+controllers		routes
+models			scripts
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ cd ..
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code[0;36m[0;00m
+$ ls
+06-Stu_PupsterApp	ajax			practice
+07-Ins_Mern		bamazon			project2
+08-Stu_Recipes		bfield5.github.io	public
+1.png			burger			react-prractice
+2.png			config			reactpractice
+Basic-Portfolio		create-react-express	reactpractice2
+Bootstrap-Portfolio	dinner-time		routes
+Calc			doris			schema.sql
+Class-Content		dorisrx			server.js
+Drugs			employee-data		sriracha.js
+FirstDayHomework	first_day_stuff		studentbio.html
+FriendFinder		gifTastic		styles.css
+Homework		guessALetter.html	test
+Projects		inclass_stuff		train-time
+Psychic-Game		index.html		turbo-sniffle
+ReactReview		js-review-activities	unit-4-game
+Responsive-Portfolio	liri-node-app		untitled folder
+Scrapper		lottery-generator.html	untitled folder 2
+Starter			node			week1-day2-html-css
+TriviaGame		package-lock.json	wordguess
+Word-Guess-Game		package.json
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code[0;36m[0;00m
+$ ls[K[Kcd dorisrx
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ cd dorisrx
+bash: cd: dorisrx: No such file or directory
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ ls
+README.md		node_modules		server.js
+READMEDORIS.md		package-lock.json	typescript
+client			package.json		yarn.lock
+controllers		routes
+models			scripts
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ cd models
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/models[0;36m[0;00m
+$ ls
+Contact.js	Drug.js		Inventory.js	index.js
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/models[0;36m[0;00m
+$ cd ..
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ cd ..[C[C[3Plscd models[C[Cls[Kcd dorisrx[C[Cls[Kcd ..[C[C[3Plsnode seedDb.jssDb.js[1PDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ node seedDb.js[C[C[9Pcd ..[C[C[3Plscd models[C[Cls[Kcd dorisrx[C[Cls[Kcd ..[C[C[3Plsnode seedDb.jssDb.js[1PDb.jssDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ ls
+README.md		node_modules		server.js
+READMEDORIS.md		package-lock.json	typescript
+client			package.json		yarn.lock
+controllers		routes
+models			scripts
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx[0;36m[0;00m
+$ cd scripts
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ ls
+seedDB.js
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ ls
+seedDB.js
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ lscd scripts[C[Cls[Knode seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/scripts/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedsDb.js[C[Cls[Kcd scripts[C[Cls[Knode seedsDb.js[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klscd scripts[C[Cls[Knode seedsDb.js[1PDb.jssDb.js[1PDb.js
+/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210
+db.Drug
+^
+
+ReferenceError: db is not defined
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/index.js:4:16)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ npm i
+[?25l⸨[90m░░░░░░░░░░░░░░░░░░[0m⸩ ⠦ rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m d21b632f294da1c[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~preinstall: m[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠴ loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loa[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yarn: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:through: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m    [27m[90m░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:update-notifier: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:object-copy: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:to-regex: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m     [27m[90m░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:xdg-basedir: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠹ diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠇ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠸ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K[K[?25h
+> mern@1.0.0 install /Users/Admin/Desktop/code/dorisrx
+> cd client && npm install
+
+[?25l⸨[90m░░░░░░░░░░░░░░░░░░[0m⸩ ⠦ rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m f1331bccac06dec[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠋ preinstall:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~preinst[0m[K⸨[7m [27m[90m░░░░░░░░░░░░░░░░░[0m⸩ ⠴ loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loa[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yarn: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m  [27m[90m░░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:is-buffer: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:xtend: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yargs: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:regenerator-runtime: [7msill[0m [35minstall[0m loadAllDepsInt[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:babel-types: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:through: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:trim-right: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:@babel/plugin-syntax-class-properties: [7msill[0m [35minst[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:sane: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:repeat-string: [7msill[0m [35minstall[0m loadAllDepsIntoIdeal[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:urix: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:concat-map: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:tmpl: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:@babel/plugin-syntax-typescript: [7msill[0m [35minstall[0m lo[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:spdx-expression-parse: [7msill[0m [35minstall[0m loadAllDepsI[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:warning: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:semver: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:wordwrap: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:util.promisify: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:babel-plugin-transform-react-remove-prop-types: [7m[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:uri-js: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:resolve: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yargs: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:xml-name-validator: [7msill[0m [35minstall[0m loadAllDepsInto[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:throat: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss-selector-parser: [7msill[0m [35minstall[0m loadAllDep[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:postcss-selector-not: [7msill[0m [35minstall[0m loadAllDepsIn[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:@babel/types: [7msill[0m [35minstall[0m loadAllDepsIntoIdealT[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:supports-color: [7msill[0m [35minstall[0m loadAllDepsIntoIdea[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:text-table: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:worker-farm: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTr[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:webpack-sources: [7msill[0m [35minstall[0m loadAllDepsIntoIde[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:kind-of: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:parse-asn1: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:uri-js: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:yargs: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:p-limit: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K⸨[7m   [27m[90m░░░░░░░░░░░░░░░[0m⸩ ⠧ loadDep:workbox-sw: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTre[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠹ diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K⸨[7m       [27m[90m░░░░░░░░░░░[0m⸩ ⠇ postinstall: [7msill[0m [35minstall[0m executeActions[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠇ prepare:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~prepare: d[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠹ prepare:dorisrx: [32minfo[0m [35mlifecycle[0m dorisrx@0.1.0~prepare: d[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m @babel/plugin-check-constants@7.0.0-beta.38 requires a peer of @babel/core@7.0.0-beta.38 but none is installed. You must install peer dependencies yourself.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m ajv-keywords@3.2.0 requires a peer of ajv@^6.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m react-native@0.57.2 requires a peer of react@16.5.0 but none is installed. You must install peer dependencies yourself.
+[0m
+[?25l⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠋ prepare:dorisrx: [30;43mWARN[0m react-native@0.57.2 requires a pee[0m[K[K[?25haudited 48593 packages in 12.085s
+found [92m0[0m vulnerabilities
+
+[?25l⸨[7m         [27m[90m░░░░░░░░░[0m⸩ ⠇ prepare:mern: [32minfo[0m [35mlifecycle[0m mern@1.0.0~prepare: mern@1.[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mern@1.0.0 No repository field.
+[0m
+audited 2574 packages in 14.199s
+found [92m0[0m vulnerabilities
+
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ npm iode seedDb.js
+/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210
+db.Drug
+^
+
+ReferenceError: db is not defined
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/index.js:4:16)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedDb.js[C[C[Cpm i[Kode seedDb.js[C[C[Klscd scripts[C[Cls[Knode seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/scripts/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedsDb.js[1PDb.js
+/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210
+db.Drug
+^
+
+ReferenceError: db is not defined
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/Inventory.js:210:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/models/index.js:4:16)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedDb.js
+/Users/Admin/Desktop/code/dorisrx/scripts/seedDb.js:387
+const mongoose = require("mongoose");
+      ^
+
+SyntaxError: Identifier 'mongoose' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedDb.jssDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/scripts/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ models[C[Cnode seedsDb.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/Admin/Desktop/code/dorisrx/scripts/seedsDb.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedsDb.js[1PDb.js
+(node:3565) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:3565) DeprecationWarning: collection.remove is deprecated. Use deleteOne, deleteMany, or bulkWrite instead.
+9 records inserted!
+bash: __git_ps1: command not found
+[0;32mAdmin@brians-MacBook-Pro-2[0;33m ~/Desktop/code/dorisrx/scripts[0;36m[0;00m
+$ node seedDb.jssDb.js[1PDb.jssDb.js[1PDb.js[C[C[Cpm i[Kode seedDb.js[C[C[Klscd scripts[C[Cls[Knode seedsDb.js[1PDb.js[C[C[9Pcd ..[C[C[3Plscd models[C[Cls[Kcd dorisrx[C[Cls[Kcd ..[C[C[3Plsnode seedDb.jssDb.js[C[C[Cpm i[Ki[C[Code seedsDb.js[1PDb.jssDb.js[C[Cgit checkout Brian[C[C[C[C[C[Cpull origin master[C[C[C[C[C[C[3Pcheckout[C[C[C[C[C[C[C[C[C[10Pnpm start[C[Cgit push origin Brian[C[C[12Pnpm start
+
+> mern@1.0.0 start /Users/Admin/Desktop/code/dorisrx
+> if-env NODE_ENV=production && npm run start:prod || npm run start:dev
+
+
+> mern@1.0.0 start:dev /Users/Admin/Desktop/code/dorisrx
+> concurrently "nodemon --ignore 'client/*'" "npm run client"
+
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m > mern@1.0.0 client /Users/Admin/Desktop/code/dorisrx
+[90m[2m[1][22m[39m > cd client && npm run start
+[90m[2m[1][22m[39m 
+[90m[2m[0][22m[39m [33m[nodemon] 1.18.4[39m
+[90m[2m[0][22m[39m [33m[nodemon] to restart at any time, enter `rs`[39m
+[90m[2m[0][22m[39m [33m[nodemon] watching: *.*[39m
+[90m[2m[0][22m[39m [32m[nodemon] starting `node server.js`[39m
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m > dorisrx@0.1.0 start /Users/Admin/Desktop/code/dorisrx/client
+[90m[2m[1][22m[39m > react-scripts start
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m module.js:549
+[90m[2m[1][22m[39m     throw err;
+[90m[2m[1][22m[39m     ^
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m Error: Cannot find module 'react-dev-utils/crossSpawn'
+[90m[2m[1][22m[39m     at Function.Module._resolveFilename (module.js:547:15)
+[90m[2m[1][22m[39m     at Function.Module._load (module.js:474:25)
+[90m[2m[1][22m[39m     at Module.require (module.js:596:17)
+[90m[2m[1][22m[39m     at require (internal/module.js:11:18)
+[90m[2m[1][22m[39m     at Object.<anonymous> (/Users/Admin/Desktop/code/dorisrx/client/node_modules/react-scripts/bin/react-scripts.js:18:15)
+[90m[2m[1][22m[39m     at Module._compile (module.js:652:30)
+[90m[2m[1][22m[39m     at Object.Module._extensions..js (module.js:663:10)
+[90m[2m[1][22m[39m     at Module.load (module.js:565:32)
+[90m[2m[1][22m[39m     at tryModuleLoad (module.js:505:12)
+[90m[2m[1][22m[39m     at Function.Module._load (module.js:497:3)
+[90m[2m[1][22m[39m npm ERR! code ELIFECYCLE
+[90m[2m[1][22m[39m npm ERR! errno 1
+[90m[2m[1][22m[39m npm ERR! dorisrx@0.1.0 start: `react-scripts start`
+[90m[2m[1][22m[39m npm ERR! Exit status 1
+[90m[2m[1][22m[39m npm ERR! 
+[90m[2m[1][22m[39m npm ERR! Failed at the dorisrx@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m npm ERR! A complete log of this run can be found in:
+[90m[2m[1][22m[39m npm ERR!     /Users/Admin/.npm/_logs/2018-10-11T04_52_58_160Z-debug.log
+[90m[2m[1][22m[39m npm ERR! code ELIFECYCLE
+[90m[2m[1][22m[39m npm ERR! errno 1
+[90m[2m[1][22m[39m npm ERR! mern@1.0.0 client: `cd client && npm run start`
+[90m[2m[1][22m[39m npm ERR! Exit status 1
+npm ERR! 
+[90m[2m[1][22m[39m npm ERR! Failed at the mern@1.0.0 client script.
+[90m[2m[1][22m[39m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[90m[2m[1][22m[39m 
+[90m[2m[1][22m[39m npm ERR! A complete log of this run can be found in:
+[90m[2m[1][22m[39m npm ERR!     /Users/Admin/.npm/_logs/2018-10-11T04_52_58_183Z-debug.log
+[90m[2m[1][22m[39m [90m[2mnpm run client exited with code 1[22m[39m
+[90m[2m[0][22m[39m (node:3584) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[90m[2m[0][22m[39m 🌎  ==> API Server now listening on PORT 3001!
+[90m[2m[0][22m[39m hey
+[90m[2m[0][22m[39m Error: ENOENT: no such file or directory, stat '/Users/Admin/Desktop/code/dorisrx/client/build/index.html'
+[90m[2m[0][22m[39m Error: ENOENT: no such file or directory, stat '/Users/Admin/Desktop/code/dorisrx/client/build/index.html'
