@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Jumbotron } from "reactstrap";
 import API4 from "../../utilities/API4";
+import Modal from "../../components/modal"
 
 class Detail extends Component {
   state = {
@@ -52,16 +53,10 @@ class Detail extends Component {
 
   render() {
     return (
+
+    <Modal>
+      
       <Container fluid>
-        <Row>
-          <Col size="md-12">
-            <Jumbotron>
-              <h1>
-                Here Is Your Medication Information
-              </h1>
-            </Jumbotron>
-          </Col>
-        </Row>
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
@@ -85,6 +80,9 @@ class Detail extends Component {
           </Col>
         </Row>
       </Container>
+      </Modal>
+      
+      
     );
   }
 }

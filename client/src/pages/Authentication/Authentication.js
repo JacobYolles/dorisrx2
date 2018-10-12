@@ -51,7 +51,7 @@ class Authentication extends Component {
   render() {
     return (
 
-      <Modal>
+      <Modal view={true}>
         {
           <form style={styles.form} >
 
