@@ -7,7 +7,8 @@ import User from "./pages/User";
 import Reports from "./pages/Reports"
 import Caregiver from "./pages/Caregiver";
 import TodaysMedication from "./pages/Todays_Medication";
-import NewMedication from "./pages/New_Medication"
+import Detail from "./pages/Detail";
+import NewMedication from "./pages/New_Medication";
 import { Col, Row, Container } from "reactstrap";
 
 
@@ -26,6 +27,8 @@ const App = () => (
           <Route path="/caregiver" component={Caregiver} />
           <Route exact path="/New_Medication" component={NewMedication} />
           <Route exact path="/Todays_Medication" component={TodaysMedication} />
+          <Route exact path="/Detail" component={Detail} />
+
         </Col>
       </Row>
       </Container>
