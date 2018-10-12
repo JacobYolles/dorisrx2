@@ -1,7 +1,16 @@
+body {
+    
+    background-image: url("https://image.ibb.co/bZ41Op/blue_squares_powerpoint_backgrounds.jpg");
+    background-size: cover;
+    
+}
+
+#root {
+    height: 100%;
+}
+
+
 div.column {
-    /* margin-top: 5%; */
-    margin-left: 5%;
-    margin-right: 5%;
     width: 100%;
     height: 100%;
 
@@ -15,8 +24,46 @@ div.column {
    
     text-align: left;
 }
-#jake {
+
+
+.link {
+    color: #FFF;
+    font-size: 16px;
+    
+  }
+
+.link:hover {
+     color: black;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 20px ;
+    
+  }
+
+th {
+      text-align: center;
+      width: 33%;
+  }
+
+td, th {    
+    text-align: left;
+    margin-bottom: 5px;
+}
+#times {
+    color: white;
     text-align: center;
 }
 
+.tButton {
+    
+}
 
+
+
+
+
+
+
+  
