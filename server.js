@@ -3,6 +3,15 @@ const express = require("express")
 const routes = require("./routes");
 const mongoose = require("mongoose")
 var app = express();
+// Configuring Passport
+var passport = require('passport');
+var expressSession = require('express-session');
+app.use(expressSession({secret: 'mySecretKey'}));
+app.use(passport.initialize());
+app.use(passport.session());
+var dbConfig = require('./db.js');
+var mongoose = require('mongoose');
+mongoose.connect(dbConfig.url);
 // app.use(express.static("public"));
 const PORT = process.env.PORT || 3001;
 
