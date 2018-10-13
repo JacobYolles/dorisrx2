@@ -138,24 +138,28 @@ class New_Medication extends React.Component {
             
             <form>
               <Input
+                title="Prescription Number"
                 value={this.state.rxNum}
                 onChange={this.handleInputChange}
                 name="rxNum"
                 placeholder="Prescription Number"
               />
               <Input
+                title="Pharmacy Name"
                 value={this.state.pharmName}
                 onChange={this.handleInputChange}
                 name="pharmName"
                 placeholder="Pharmacy Name"
               />
               <Input
+                title="Doctor Name"
                 value={this.state.doctorName}
                 onChange={this.handleInputChange}
                 name="doctorName"
                 placeholder="Doctor Name"
               />
               <Input
+                title="Drug Name"
                 value={this.state.drugName}
                 onChange={this.handleInputChange}
                 name="drugName"
@@ -163,50 +167,63 @@ class New_Medication extends React.Component {
               />
             
               <Input
+                title="Drug size, measuring units and type"
                 value={this.state.drugSizeMeasureType}
                 onChange={this.handleInputChange}
                 name="drugSizeMeasureType"
                 placeholder="Drug size, measure and type (ex: 150 mg tablet ) "
               />
               <Input
+                title="Bottle capacity when full"
                 value={this.state.bottleFullQty}
                 onChange={this.handleInputChange}
                 name="bottleFullQty"
+                inputType="number"
                 placeholder="How many in a full bottle (Qty)"
               />
               <Input
+                title="How many in the bottle if not full when entering this the first time."
                 value={this.state.bottlePartialQuanitity}
                 onChange={this.handleInputChange}
                 name="bottlePartialQuanitity"
+                inputType="number"
                 placeholder="If this is not a full bottle, how many are left? (otherwise leave blank)"
               />
               <Input
+                title="Discard Date"
                 value={this.state.rxDiscard}
                 onChange={this.handleInputChange}
                 name="rxDiscard"
+                inputType="date"
                 placeholder="What is the discard date?"
               />
               <Input
+                title="Reorder Date"
                 value={this.state.rxReorder}
                 onChange={this.handleInputChange}
                 name="rxReorder"
+                inputType="date"
                 placeholder="What is the re-order date?"
               />
               <Input
+                title="How many to take in each dose"
                 value={this.state.drugDose}
                 onChange={this.handleInputChange}
                 name="drugDose"
+                inputType="number"
                 placeholder="How many in each dose?"
               />
-
+                <p>What time(s) of day is it to be taken?</p>
                 <label>
                 Morning
                 <input
+                  title="Take it mornings"
                   name="early"
                   type="checkbox"
                   checked={this.state.early}
                   onChange={this.handleInputChange} />
               </label>
+
               <label>
                 Mid-Day
                 <input
@@ -215,6 +232,7 @@ class New_Medication extends React.Component {
                   checked={this.state.middle}
                   onChange={this.handleInputChange} />
               </label>
+
               <label>
                 Evening
                 <input
