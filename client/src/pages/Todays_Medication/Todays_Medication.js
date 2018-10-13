@@ -37,6 +37,7 @@ class TodaysMedication extends Component {
     bottlePartialQuantity: "",
     drugDose: "",
     drugFrequency: "",
+    taken: false
   }
 
   this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -58,6 +59,7 @@ class TodaysMedication extends Component {
           bottlePartialQuantity: "",
           drugDose: "",
           drugFrequency: "",
+          taken: ""
         })
       )
       .catch(err => console.log(err))
@@ -186,12 +188,18 @@ class TodaysMedication extends Component {
                 {late.map(inventory => (
                   <tr key={inventory._id}>
 
-                   <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                   <td><Link
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td>
+                  </Link></td>
+
+                    <td><Link
+                      to="/New_Medication"><td>{inventory.drugDose}</td>
+                    </Link></td>
+
+                    <td><Link
+                      to="/New_Medication"><td>{inventory.drugForm}</td>
+                    </Link></td>
+                    
                     <td><Button
                       action={this.handleFormSubmit}
 
