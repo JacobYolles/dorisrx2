@@ -4,50 +4,60 @@ import { Col, Row, Container, Jumbotron } from "reactstrap";
 import API4 from "../../utilities/API4";
 
 class Detail extends Component {
-  state = {
-    drugsValues: [],  
-    warnings: "",
-    directions: "",
-    usage: ""
-  };
+  // state = {
+  //   drugsValues: [],
+  //   warnings: "",
+  //   directions: "",
+  //   usage: "",
+  //   brand_name: ""
+  // };
+  constructor(props) {
+    super(props);
+    // console.log(props.location.state.drugName);
+    this.state = {
+      drugName: props.location.state.drugName
+    }
+  }
+
   // When this component mounts, grab the book with the _id of this.props.match.params.id
   // e.g. localhost:3000/books/599dcb67f0f16317844583fc
-  componentDidMount(){
-    this.loadDrugs();
-   this.fdaData();
+  componentDidMount() {
+    this.loadDrugs(this.state.drugName);
+    // this.fdaData(this.state.drugName));
+    console.log(this.state.drugName);
   }
 
 
   fdaData = () => {
-      API4.getFdaDataValue(tylenol) 
-          .then(res => {
-              console.log({drugsValues})
+    API4.getFdaDataValue()
+      .then(res => {
+        // console.log({drugsValues})
 
 
 
-        })
-      
+      })
+
   }
 
-  deleteFdaValue
+  // deleteFdaValue
 
   loadDrugs = () => {
-    API.searchFDA() 
-    .then(res => {
-      console.log({ warnings: res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage})
-      
-      this.setState({ "warnings": res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+    API4.getFdaDataValue(this.state.drugName)
+      .then(res => {
+        console.log({ brand_name: res.data.results[0].openfda.brand_name, warnings: res.data.results[0].warnings_and_cautions||res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage })
 
-    })
-    .catch(err => console.log(err));
-      
+        this.setState({ "brand_name": res.data.results[0].openfda.brand_name, "warnings": res.data.results[0].warnings_and_cautions||res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+
+      })
+      .catch(err => console.log(err));
+
 
   }
 
-//   loadFDA = () => {
+  //   loadFDA = () => {
 
 
-//   }
+  //   }
 
   render() {
     return (
@@ -56,7 +66,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.book.title} by {this.state.book.author}
+                Here Is Your Medication Information
               </h1>
             </Jumbotron>
           </Col>
@@ -64,19 +74,27 @@ class Detail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h4>Here's Your Medication Information</h4>
               <p>
-                {this.state.book.synopsis}
+              <strong>Medication:</strong><br></br>{this.state.drugName}<br></br><br></br>
+
+                <strong>Warnings:</strong><br></br>{this.state.warnings}<br></br><br></br>
+                <strong>Instructions:</strong><br></br>{this.state.directions}
+                <br></br><br></br>
+
+                <strong>Usage:</strong><br></br>{this.state.usage}
+
               </p>
             </article>
           </Col>
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
+            <Link to="/Todays_Medication">← Back to Prescription Log</Link>
           </Col>
         </Row>
       </Container>
+      
     );
   }
 }

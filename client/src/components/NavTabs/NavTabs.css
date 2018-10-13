@@ -1,8 +1,11 @@
 .navbar-brand {
     color: white;
+    /* height: 80px;
+    margin-top: 25px; */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    
 }
