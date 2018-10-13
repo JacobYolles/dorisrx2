@@ -31,12 +31,12 @@ const InventorySchema = new Schema({
         type: String,
         required: true
     },
-    bottleFullQuantity: {
+    currentQuantity: {
         type: Number,
         required: true
     },
-    bottlePartialQuantity: {
-        type: Number,
+    taken: {
+        type: Boolean,
         required: true
     },
     drugDose: {
@@ -51,6 +51,14 @@ const InventorySchema = new Schema({
         type: String,
         default: false,
     },
+    middle: {
+        type: String,
+        default: false,
+    },
+    late: {
+        type: String,
+        required: false
+    }
 
 })
 
