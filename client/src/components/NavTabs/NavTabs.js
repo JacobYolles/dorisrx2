@@ -21,7 +21,7 @@ const NavTabs = () => (
       Reports
         </a>  */}
 
-         <a className="navbar-brand" href="/New_Medication">
+         <a className="navbar-brand" href="/InputForm">
       New Medication
         </a>
 

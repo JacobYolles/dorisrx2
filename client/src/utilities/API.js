@@ -13,9 +13,12 @@ export default {
     deleteDrug: function(id) {
       return axios.delete("/api/drug/" + id);
     },
-    // Saves a drug to the database
-    saveDrug: function(drugData) {
-      return axios.post("/api/drug", drugData);
-    }
+    saveDrug: function(rxData) {
+      console.log("rxData: " , rxData);
+      
+      return axios.post("/api/InputForm", rxData);
+    },
+
+
   };
 

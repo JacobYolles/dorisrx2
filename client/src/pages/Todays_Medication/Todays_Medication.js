@@ -122,9 +122,9 @@ class TodaysMedication extends Component {
                     <Link
                       to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
+                      to="/InputForm"><td>{inventory.drugDose}</td></Link>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                      to="/InputForm"><td>{inventory.drugForm}</td></Link>
 
                     <td>
                       <Button
@@ -158,9 +158,9 @@ class TodaysMedication extends Component {
                     <Link
                       to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
+                      to="/InputForm"><td>{inventory.drugDose}</td></Link>
                     <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                      to="/InputForm"><td>{inventory.drugForm}</td></Link>
 
                     <td><Button
                       className="tButton"
@@ -193,11 +193,11 @@ class TodaysMedication extends Component {
                   </Link></td>
 
                     <td><Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td>
+                      to="/InputForm"><td>{inventory.drugDose}</td>
                     </Link></td>
 
                     <td><Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td>
+                      to="/InputForm"><td>{inventory.drugForm}</td>
                     </Link></td>
                     
                     <td><Button
