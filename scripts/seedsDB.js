@@ -12,6 +12,14 @@ mongoose.connect(
     "mongodb://localhost/dorisrx"
 )
 
+const UserSeed = [
+
+    {
+        
+
+    }
+
+]
 
 const DrugSeed = [
 

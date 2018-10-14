@@ -1,21 +1,23 @@
 const router = require("express").Router();
-const drugRoutes = require("./Drug");
 const contactRoutes = require("./Contact")
-const inventoryRoutes = require("./Inventory")
+const drugRoutes = require("./Drug");
 const fdaRoutes = require("./Fda")
-
+const inventoryRoutes = require("./Inventory")
+const userRoutes = require("./User")
+var express = require('express');
 // All routes
-router.use("/drug", drugRoutes);
 router.use("/contact", contactRoutes)
-router.use("/inventory", inventoryRoutes)
+router.use("/drug", drugRoutes)
 router.use("/fda", fdaRoutes)
+router.use("/inventory", inventoryRoutes)
+router.use("/user", userRoutes)
 
 module.exports = router;
 
 ////////////////////////// PASSPORT DATA
 
-var express = require('express');
-var router = express.Router();
+
+
 
 var isAuthenticated = function (req, res, next) {
 	// if user is authenticated in the session, call the next() to call the next request handler 

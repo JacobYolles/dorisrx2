@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Input from "../../components/input"
 import Modal from "../../components/modal"
 import "./Authentication.css"
-
+import API5 from "../../utilities/API5"
 
 
 const styles = {
@@ -16,10 +16,21 @@ const styles = {
 
 class Authentication extends Component {
 
+  componentDidMount() {
+    this.loadUsers();
+  }
+
+  loadUsers = () => {
+    API5.getUsers
+  }
+
+
   state = {
+    username: "",
+    password: "",
+    email: "",
     firstName: "",
     lastName: "",
-    password: ""
   }
 
 
@@ -42,9 +53,11 @@ class Authentication extends Component {
 
 
     this.setState({
-      firstName: "",
-      lastName: "",
-      password: ""
+      username: "",
+    password: "",
+    email: "",
+    firstName: "",
+    lastName: "",
     });
   };
 
@@ -56,18 +69,11 @@ class Authentication extends Component {
           <form style={styles.form} >
 
             <Input
-              value={this.state.firstName}
-              name="firstName"
+              value={this.state.username}
+              name="username"
               onChange={this.handleInputChange}
               type="text"
-              placeholder="First Name"
-            />
-            <Input
-              value={this.state.lastName}
-              name="lastName"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="Last Name"
+              placeholder="User Name"
             />
             <Input
               value={this.state.password}
@@ -76,6 +82,28 @@ class Authentication extends Component {
               type="password"
               placeholder="Password"
             />
+            <Input
+              value={this.state.email}
+              name="email"
+              onChange={this.handleInputChange}
+              type="text"
+              placeholder="Email"
+            />
+            <Input
+              value={this.state.firstName}
+              name="firstName"
+              onChange={this.handleInputChange}
+              type="text"
+              placeholder="First Name"
+            />
+             <Input
+              value={this.state.lastName}
+              name="lastName"
+              onChange={this.handleInputChange}
+              type="text"
+              placeholder="Last Name"
+            />
+
 
           </form>
         }

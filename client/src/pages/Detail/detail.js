@@ -15,7 +15,7 @@ class Detail extends Component {
     super(props);
     // console.log(props.location.state.drugName);
     this.state = {
-      drugName: props.location.state.drugName
+      drugName: props.location.drugName
     }
   }
 
