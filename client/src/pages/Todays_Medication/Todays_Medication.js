@@ -163,10 +163,10 @@ class TodaysMedication extends Component {
                       to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
                       <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugDose}</Link></td>
+                      to="/Detail">{inventory.drugDose}</Link></td>
                       <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugForm}</Link></td>
+                      to="/Detail">{inventory.drugForm}</Link></td>
 
                     <td><Button
                       className="tButton"

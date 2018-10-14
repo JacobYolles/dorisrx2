@@ -1,11 +1,14 @@
 .navbar-brand {
     color: white;
-    /* height: 80px;
-    margin-top: 25px; */
+    /* height: 50px;
+    margin-top: 15px; */
+    
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
     
 }

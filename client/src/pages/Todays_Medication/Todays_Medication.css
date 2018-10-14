@@ -26,17 +26,19 @@ div.column {
 }
 
 th {
-    color: #FFF;
+    color: black;
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     width: 200px;
+    
     
 }
 
 
 .link {
-    color: darkblue;
+    color: black;
     font-size: 16px;
+   
     
   }
 
@@ -46,7 +48,7 @@ th {
 
   table {
     border-collapse: separate;
-    border-spacing: 20px ;
+    border-spacing: 10px;
     
   }
 
@@ -56,23 +58,29 @@ th {
   }
 
 td, th {    
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
-    
-    
 }
+
+td {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 #times {
     color: white;
     text-align: center;
     font-family: 'Crimson Text', serif;
 }
 
-/* .transparent-tables {
+.transparent-tables {
     background-color: white;
     opacity: 0.6;
     border-radius: 25px;
-    min-height: 450px
-  } */
+    min-height: 500px;
+    
+    
+  }
 
 
 

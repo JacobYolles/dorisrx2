@@ -75,7 +75,7 @@ const DrugSeed = [
         rxNum: "54321",
         pharmName: "King Soopers #14",
         doctorName: "Dr. Jones",
-        drugName: "Allopurinol(Zyloprim)",
+        drugName: "Allopurinol",
         drugSizeMeasureType: "60 mg pill",
         bottleFullQty: 90,
         bottlePartialQty: 0,
@@ -433,7 +433,7 @@ const InventorySeed = [
         taken: false
         },
         {
-        drugName: "Allopurinol(Zyloprim)",
+        drugName: "Allopurinol",
         currentQuantity: 09,
         taken: false,
         drugDose: 1,
