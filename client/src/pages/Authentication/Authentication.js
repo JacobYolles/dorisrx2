@@ -16,16 +16,10 @@ const styles = {
 
 class Authentication extends Component {
 
-  componentDidMount() {
-    this.loadUsers();
-  }
-
-  loadUsers = () => {
-    API5.getUsers
-  }
 
 
   state = {
+    users: [],
     username: "",
     password: "",
     email: "",
@@ -33,6 +27,24 @@ class Authentication extends Component {
     lastName: "",
   }
 
+
+  componentDidMount() {
+    this.loadUsers();
+  }
+
+  loadUsers = () => {
+    API5.getUsers().then(res =>
+      this.setState({
+          users: res.data,
+          username: "",
+          password: "",
+          email: "",
+          firstName: "",
+          lastName: "",
+      })
+  )
+  .catch(err => console.log(err))
+};
 
   handleInputChange = event => {
     let value = event.target.value

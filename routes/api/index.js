@@ -1,8 +1,5 @@
 const router = require("express").Router();
-<<<<<<< HEAD
-=======
-const drugRoutes = require("./drug");
->>>>>>> 2950071f5fb036014805b90bc32672b977fa4537
+
 const contactRoutes = require("./Contact")
 const drugRoutes = require("./Drug");
 const fdaRoutes = require("./Fda")

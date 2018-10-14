@@ -12,12 +12,47 @@ mongoose.connect(
     "mongodb://localhost/dorisrx"
 )
 
+
+// const UserSchema = new Schema({
+//     id: {
+//         type: String,
+//         required: false,
+//     },
+//     username: {
+//         type: String,
+//         required: true,
+//     },
+//     password: {
+//         type: String,
+//         required: true,
+//     },
+//     email: {
+//         type: String,
+//         $regex: /@mongodb\.com$/,
+//         required: true,
+//     },
+//     firstName: {
+//         type: String,
+//         required: true,
+//     },
+//     lastName: {
+//         type: String,
+//         required: true
+//     },
+    
+// })
+
 const UserSeed = [
 
     {
-        
+        id: "1",
+        username: "Sirauron",
+        password: "123abc",
+        email: "lime33l@yahoo.com",
+        firstName: "jake",
+        lastName: "yolles"
 
-    }
+    },
 
 ]
 
@@ -560,3 +595,15 @@ db.Inventory
         console.error(err);
         process.exit(1);
     });
+
+db.User
+    .remove({})
+    .then(() => db.User.collection.insertMany(UserSeed))
+    .then(data => {
+        console.log(data.result.n + " records inserted!");
+        process.exit(0);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    })

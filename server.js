@@ -33,7 +33,7 @@ app.use(flash());
 var initPassport = require('./passport/init');
 initPassport(passport);
 
-var routes = require('./routes/index')(passport);
+
 app.use('/', routes);
 
 /// catch 404 and forward to error handler
