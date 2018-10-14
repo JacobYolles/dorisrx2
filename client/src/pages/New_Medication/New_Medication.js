@@ -5,6 +5,7 @@ import API from "../../utilities/API";
 import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
+import "./New_Medication.css";
 
 
 
@@ -88,30 +89,30 @@ class New_Medication extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        ndcNum: "",
-        rxNum: "",
-        pharmName: "",
-        doctorName: "",
-        drugName: "",
-        drugForm: "",
-        drugFormSizeAndMeasure: "",
-        currentQty: "" ,
-        bottleFullQty: "",
-        rxDiscard: "",
-        rxReorder: "",
-        drugDose: "",
-        drugFreq: "",
-        early: "",
-        middle: "",
-        late: ""
-      
+      ndcNum: "",
+      rxNum: "",
+      pharmName: "",
+      doctorName: "",
+      drugName: "",
+      drugForm: "",
+      drugFormSizeAndMeasure: "",
+      currentQty: "",
+      bottleFullQty: "",
+      rxDiscard: "",
+      rxReorder: "",
+      drugDose: "",
+      drugFreq: "",
+      early: "",
+      middle: "",
+      late: ""
+
     };
     // console.log("state-early :" + this.state.early + "state-middle :" + this.state.middle + "state-late :" + this.state.late );
-    
+
     this.handleInputChange = this.handleInputChange.bind(this);
-    
+
   }
-  
+
 
   handleInputChange(event) {
     const target = event.target;
@@ -123,20 +124,20 @@ class New_Medication extends React.Component {
     });
     this.showState()
   }
-  showState(){
-  console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late );
+  showState() {
+    console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late);
   }
 
   render() {
     return (
 
-<Container fluid>
+      <Container fluid>
         <Row>
           <Col size="md-6">
-           
-              <h1>Prescription Bottle Inputter</h1>
-            
-            <form>
+
+            <h1 className="new-M-h1">Prescription Bottle Inputter</h1>
+
+            <form className="table-background">
               <Input
                 title="Prescription Number"
                 value={this.state.rxNum}
@@ -165,7 +166,7 @@ class New_Medication extends React.Component {
                 name="drugName"
                 placeholder="Drug Name"
               />
-            
+
               <Input
                 title="Drug size, measuring units and type"
                 value={this.state.drugSizeMeasureType}
@@ -213,9 +214,9 @@ class New_Medication extends React.Component {
                 inputType="number"
                 placeholder="How many in each dose?"
               />
-                <p>What time(s) of day is it to be taken?</p>
-                <label>
-                Morning
+              <p>What time(s) of day is it to be taken?</p>
+              <label>
+                <span className="form-padding">Morning</span>
                 <input
                   title="Take it mornings"
                   name="early"
@@ -225,7 +226,7 @@ class New_Medication extends React.Component {
               </label>
 
               <label>
-                Mid-Day
+                <span className="form-padding">Mid-Day</span>
                 <input
                   name="middle"
                   type="checkbox"
@@ -234,7 +235,7 @@ class New_Medication extends React.Component {
               </label>
 
               <label>
-                Evening
+                <span className="form-padding">Evening</span>
                 <input
                   name="late"
                   type="checkbox"
@@ -243,21 +244,21 @@ class New_Medication extends React.Component {
               </label>
 
               <Button
-                      action={this.handleFormSubmit}
+                className="button-padding"
+                action={this.handleFormSubmit}
+                type={"primary"}
+                title={"Submit"}
 
-                      type={"primary"}
-                      title={"Submit"}
-                      
-                    />
+              />
             </form>
-          
-            </Col>
+
+          </Col>
         </Row>
       </Container>
 
 
 
-      
+
     );
   }
 }

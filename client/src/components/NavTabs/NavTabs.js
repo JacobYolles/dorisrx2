@@ -30,9 +30,9 @@ const NavTabs = () => (
       Today's Medications
         </a>
 
-        <a className="navbar-brand" href="/Detail">
+        {/* <a className="navbar-brand" href="/Detail">
       Medication Details
-        </a>
+        </a> */}
 
 </nav>
 
