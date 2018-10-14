@@ -1,67 +1,268 @@
-import React from "react";
+// import React from "react";
+import React, { Component, Fragment } from "react";
+import Input from "../../components/input/input";
 import API from "../../utilities/API";
 import API4 from "../../utilities/API4";
+import { Col, Row, Container } from "reactstrap";
+import Button from "../../components/button/Button";
 
 
 
-class NewMedication extends React.Component {
+// class New_Medication extends React.Component {
 
-  state = {
-    drug: [],
+//   state = {
+//     drug: [],
+//         ndcNum: "38-991-23",
+//         rxNum: "8813S",
+//         pharmName: "Save On 10",
+//         doctorName: "Dr. Reese",
+//         drugName: "Ramelteon",
+//         drugForm: "tablet",
+//         drugFormSizeAndMeasure: "300 mg",
+//         currentQty: 15,
+//         bottleFullQty: 90,
+//         taken: false,
+//         rxDiscard: "2019-02-02",
+//         rxReorder: "2019-03-03",
+//         drugDose: 1,
+//         drugFreq: 2,
+//         early: true,
+//         middle: false,
+//         late: true,
+//         folders: ['early', 'mid', 'late'],
+//         values: []
+//   }
+
+//   // componentDidMount() {
+//   //   this.loadDrugData()
+//   // }
+
+//   handleChange = (e) => {
+//     let options = e.target.options;
+//     let selectedOptions = [];
+
+//     for(let i = 0; i < options.length; i++) {
+//         if( options[i].selected ) {
+//             selectedOptions.push(options[i].value);
+//         }
+//     }
+
+//     this.setState({values: selectedOptions});
+// }
+
+// handleSubmit = (e) => {
+//   e.preventDefault();
+//   console.log('this.state.values' + this.state.values);
+// }
+// // componentDidMount() {
+// //   // alert("here")
+// //   API.getDrugs()
+// //   .then(res => this.setState({
+// //     drugs: res.data
+// //   }))
+// //   .catch(err => console.log(err))
+// // }
+
+
+//   render() {
+//     return (
+//       <div>
+//         <h1>Input a New Prescription</h1>
+//         <form onSubmit={this.handleSubmit}>
+//                 <select multiple="true" value={this.state.values} onChange={this.handleChange}>
+//                     {this.state.folders.map((item, index) => 
+//                         <option value={index} key={index}>{item}</option>    
+//                     )}
+//                 </select>
+//                 <button type="submit">Go</button>
+//             </form>
+//       </div>
+
+//     )
+//   }
+
+
+// }
+
+class New_Medication extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        ndcNum: "",
+        rxNum: "",
+        pharmName: "",
+        doctorName: "",
+        drugName: "",
+        drugForm: "",
+        drugFormSizeAndMeasure: "",
+        currentQty: "" ,
+        bottleFullQty: "",
+        rxDiscard: "",
+        rxReorder: "",
+        drugDose: "",
+        drugFreq: "",
+        early: "",
+        middle: "",
+        late: ""
+      
+    };
+    // console.log("state-early :" + this.state.early + "state-middle :" + this.state.middle + "state-late :" + this.state.late );
+    
+    this.handleInputChange = this.handleInputChange.bind(this);
+    
   }
+  
 
-  componentDidMount() {
-    this.loadFdaData()
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+    this.showState()
   }
-
-  // loadFdaData = () => {
-  //   API4.getFdaDataValue(tylenol)
-  // }
-  // .then(API.saveFromFdaToDrugs)
-  // .then(API. )
-
-componentDidMount() {
-  // alert("here")
-  API.getDrugs()
-  .then(res => this.setState({
-    drugs: res.data
-  }))
-  .catch(err => console.log(err))
-}
-
+  showState(){
+  console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late );
+  }
 
   render() {
     return (
-      <div>
-        <h1>Daily Prescription Log</h1>
-        <p>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
-          ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus porta. Nam
-          quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-          diam, sit amet facilisis lectus blandit at.
-    </p>
-      </div>
 
-    )
+<Container fluid>
+        <Row>
+          <Col size="md-6">
+           
+              <h1>Prescription Bottle Inputter</h1>
+            
+            <form>
+              <Input
+                title="Prescription Number"
+                value={this.state.rxNum}
+                onChange={this.handleInputChange}
+                name="rxNum"
+                placeholder="Prescription Number"
+              />
+              <Input
+                title="Pharmacy Name"
+                value={this.state.pharmName}
+                onChange={this.handleInputChange}
+                name="pharmName"
+                placeholder="Pharmacy Name"
+              />
+              <Input
+                title="Doctor Name"
+                value={this.state.doctorName}
+                onChange={this.handleInputChange}
+                name="doctorName"
+                placeholder="Doctor Name"
+              />
+              <Input
+                title="Drug Name"
+                value={this.state.drugName}
+                onChange={this.handleInputChange}
+                name="drugName"
+                placeholder="Drug Name"
+              />
+            
+              <Input
+                title="Drug size, measuring units and type"
+                value={this.state.drugSizeMeasureType}
+                onChange={this.handleInputChange}
+                name="drugSizeMeasureType"
+                placeholder="Drug size, measure and type (ex: 150 mg tablet ) "
+              />
+              <Input
+                title="Bottle capacity when full"
+                value={this.state.bottleFullQty}
+                onChange={this.handleInputChange}
+                name="bottleFullQty"
+                inputType="number"
+                placeholder="How many in a full bottle (Qty)"
+              />
+              <Input
+                title="How many in the bottle if not full when entering this the first time."
+                value={this.state.bottlePartialQuanitity}
+                onChange={this.handleInputChange}
+                name="bottlePartialQuanitity"
+                inputType="number"
+                placeholder="If this is not a full bottle, how many are left? (otherwise leave blank)"
+              />
+              <Input
+                title="Discard Date"
+                value={this.state.rxDiscard}
+                onChange={this.handleInputChange}
+                name="rxDiscard"
+                inputType="date"
+                placeholder="What is the discard date?"
+              />
+              <Input
+                title="Reorder Date"
+                value={this.state.rxReorder}
+                onChange={this.handleInputChange}
+                name="rxReorder"
+                inputType="date"
+                placeholder="What is the re-order date?"
+              />
+              <Input
+                title="How many to take in each dose"
+                value={this.state.drugDose}
+                onChange={this.handleInputChange}
+                name="drugDose"
+                inputType="number"
+                placeholder="How many in each dose?"
+              />
+                <p>What time(s) of day is it to be taken?</p>
+                <label>
+                Morning
+                <input
+                  title="Take it mornings"
+                  name="early"
+                  type="checkbox"
+                  checked={this.state.early}
+                  onChange={this.handleInputChange} />
+              </label>
+
+              <label>
+                Mid-Day
+                <input
+                  name="middle"
+                  type="checkbox"
+                  checked={this.state.middle}
+                  onChange={this.handleInputChange} />
+              </label>
+
+              <label>
+                Evening
+                <input
+                  name="late"
+                  type="checkbox"
+                  checked={this.state.late}
+                  onChange={this.handleInputChange} />
+              </label>
+
+              <Button
+                      action={this.handleFormSubmit}
+
+                      type={"primary"}
+                      title={"Submit"}
+                      
+                    />
+            </form>
+          
+            </Col>
+        </Row>
+      </Container>
+
+
+
+      
+    );
   }
-
-
 }
 
-export default NewMedication;
 
-// const Input = () => (
-//   <div>
-//     <h1>Enter Your Prescription Information</h1>
-//     <p>
-//       Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
-//       ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus porta. Nam
-//       quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-//       imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-//       diam, sit amet facilisis lectus blandit at.
-//     </p>
-//   </div>
-// );
+export default New_Medication;
 
-// export default Input;
+

@@ -37,6 +37,7 @@ class TodaysMedication extends Component {
     bottlePartialQuantity: "",
     drugDose: "",
     drugFrequency: "",
+    taken: false
   }
 
   this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -58,6 +59,7 @@ class TodaysMedication extends Component {
           bottlePartialQuantity: "",
           drugDose: "",
           drugFrequency: "",
+          taken: ""
         })
       )
       .catch(err => console.log(err))
