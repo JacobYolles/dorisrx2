@@ -52,7 +52,7 @@ class Authentication extends Component {
               name="userName"
               onChange={this.handleInputChange}
               type="text"
-              placeholder="userName"
+              placeholder="User Name"
             />
             <Input
               value={this.state.password}
