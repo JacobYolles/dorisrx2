@@ -6,7 +6,9 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
     
     width: 100%;
     

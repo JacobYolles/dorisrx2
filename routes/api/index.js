@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const drugRoutes = require("./Drug");
+const drugRoutes = require("./drug");
 const contactRoutes = require("./Contact")
 const inventoryRoutes = require("./Inventory")
 const fdaRoutes = require("./Fda")
