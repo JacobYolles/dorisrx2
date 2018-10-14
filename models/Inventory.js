@@ -31,12 +31,9 @@ const InventorySchema = new Schema({
         type: String,
         required: true
     },
-    bottleFullQuantity: {
         type: Number,
         required: true
     },
-    bottlePartialQuantity: {
-        type: Number,
         required: true
     },
     drugDose: {

@@ -101,11 +101,8 @@ class TodaysMedication extends Component {
 
         <Row>
           <Col className="test col-md-4">
-            <h1 id="times">early</h1>
-            <table className="users">
               <thead>
                 <tr>
-                  <th>Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
                   <th></th>
@@ -117,12 +114,6 @@ class TodaysMedication extends Component {
 
                   <tr key={inventory._id}>
 
-                    <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
 
                     <td>
                       <Button
@@ -139,8 +130,6 @@ class TodaysMedication extends Component {
           </Col>
 
           <Col className="test col-md-4">
-            <h1 id="times">mid</h1>
-            <table className="users">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -153,12 +142,6 @@ class TodaysMedication extends Component {
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
 
-                    <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
 
                     <td><Button
                       className="tButton"
@@ -173,8 +156,6 @@ class TodaysMedication extends Component {
             </table>
           </Col>
           <Col className="test col-md-4">
-            <h1 id="times">late</h1>
-            <table className="users">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -186,14 +167,7 @@ class TodaysMedication extends Component {
                 {late.map(inventory => (
                   <tr key={inventory._id}>
 
-                   <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
                     <td><Button
-                      action={this.handleFormSubmit}
 
                       type={"primary"}
                       title={"Taken"}
