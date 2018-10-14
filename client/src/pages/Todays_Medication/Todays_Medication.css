@@ -25,8 +25,17 @@ div.column {
     text-align: left;
 }
 
+th {
+    color: #FFF;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    width: 200px;
+    
+}
+
 
 .link {
+    color: darkblue;
     font-size: 16px;
     
   }
@@ -49,12 +58,21 @@ th {
 td, th {    
     text-align: left;
     margin-bottom: 5px;
+    
+    
 }
 #times {
     color: white;
     text-align: center;
+    font-family: 'Crimson Text', serif;
 }
 
+/* .transparent-tables {
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 25px;
+    min-height: 450px
+  } */
 
 
 
