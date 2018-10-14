@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./modal.css";
-import { Button, Modal } from "react-bootstrap"
+import "./modalTwo.css";
+import { Modal, Button } from "react-bootstrap"
 
 
 
-class ModalOne extends Component {
+class ModalTwo extends Component {
   constructor(props, context) {
     super(props, context);
 
@@ -18,42 +18,36 @@ class ModalOne extends Component {
   handleHide() {
     this.setState({ show: false });
   }
-  render(props) {
+  render() {
     return (
 
 
-      
-      <Modal id = "modalContainerOne"
+      <Modal id ="modalContainerTwo"
+
         show={this.state.show}
         container={this}
         aria-labelledby="contained-modal-title"
       >
         <Modal.Header id = "modalHeader">
           <Modal.Title id="contained-modal-title">
-           <span id = "title">DorisRx</span>
-                </Modal.Title>
+            Medication Information:
+            </Modal.Title>
         </Modal.Header>
+        <div id = "modalDrugBody">
         <Modal.Body>
-
           {this.props.children}
-
         </Modal.Body>
+        </div>
         <Modal.Footer id = "modalFooter">
-          <div id="modalButtons">
-            <Button onClick={this.handleHide} href="/Todays_Medication">Log In</Button>
-            <Button onClick={this.handleHide} href="/New_Medication">New User</Button>
-          </div>
-
+          <Button onClick={this.handleHide} href = "/Todays_Medication">Close</Button>
         </Modal.Footer>
-
       </Modal>
-     
 
     );
   }
 }
 
 
-export default ModalOne;
+export default ModalTwo;
 
 

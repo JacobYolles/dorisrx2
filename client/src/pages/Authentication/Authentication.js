@@ -5,15 +5,6 @@ import "./Authentication.css"
 
 
 
-const styles = {
-
-  form: {
-    width: 500,
-    margin: "auto",
-  },
-
-}
-
 class Authentication extends Component {
 
   state = {
@@ -51,9 +42,10 @@ class Authentication extends Component {
   render() {
     return (
 
-      <Modal view={true}>
-        {
-          <form style={styles.form} >
+     
+      <Modal>
+        
+          <form>
 
             <Input
               value={this.state.firstName}
@@ -71,8 +63,11 @@ class Authentication extends Component {
             />
 
           </form>
-        }
+        
       </Modal>
+   
+      
+
 
 
 

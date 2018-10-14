@@ -9,17 +9,6 @@ const NavTabs = () => (
         Log In / Out
         </a>
 
-      {/* <a className="navbar-brand" href="/caregiver">
-      Admin
-        </a> 
-        
-         <a className="navbar-brand" href="/user">
-      User
-        </a> 
-
-        <a className="navbar-brand" href="/reports">
-      Reports
-        </a>  */}
 
          <a className="navbar-brand" href="/New_Medication">
       New Medication
@@ -30,9 +19,7 @@ const NavTabs = () => (
       Today's Medications
         </a>
 
-        <a className="navbar-brand" href="/Detail">
-      Medication Details
-        </a>
+        
 
 </nav>
 

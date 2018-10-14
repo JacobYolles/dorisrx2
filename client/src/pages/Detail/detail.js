@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Col, Row, Container, Jumbotron } from "reactstrap";
 import API4 from "../../utilities/API4";
-import Modal from "../../components/modal"
+import ModalTwo from "../../components/modalTwo"
+import "./Detail.css"
+
+
 
 class Detail extends Component {
   // state = {
@@ -45,9 +46,9 @@ class Detail extends Component {
   loadDrugs = () => {
     API4.getFdaDataValue(this.state.drugName)
       .then(res => {
-        console.log({ brand_name: res.data.results[0].openfda.brand_name, warnings: res.data.results[0].warnings_and_cautions||res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage })
+        console.log({ brand_name: res.data.results[0].openfda.brand_name, warnings: res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage })
 
-        this.setState({ "brand_name": res.data.results[0].openfda.brand_name, "warnings": res.data.results[0].warnings_and_cautions||res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+        this.setState({ "brand_name": res.data.results[0].openfda.brand_name, "warnings": res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
 
       })
       .catch(err => console.log(err));
@@ -55,43 +56,24 @@ class Detail extends Component {
 
   }
 
-  //   loadFDA = () => {
+  // loadFDA = () => {
 
 
-  //   }
+  // }
 
   render() {
     return (
 
-    <Modal>
-      
-      <Container fluid>
-        <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h4>Here's Your Medication Information</h4>
-              <p>
-              <strong>Medication:</strong><br></br>{this.state.drugName}<br></br><br></br>
-
-                <strong>Warnings:</strong><br></br>{this.state.warnings}<br></br><br></br>
-                <strong>Instructions:</strong><br></br>{this.state.directions}
-                <br></br><br></br>
-
-                <strong>Usage:</strong><br></br>{this.state.usage}
-
-              </p>
-            </article>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-2">
-            <Link to="/Todays_Medication">← Back to Prescription Log</Link>
-          </Col>
-        </Row>
-      </Container>
-      </Modal>
-      
-      
+      <ModalTwo>
+        <article>
+          <p>
+            <strong>Medication:</strong><br></br>{this.state.drugName}<br></br><br></br>
+            <strong>Usage:</strong><br></br>{this.state.usage}<br></br><br></br>
+            <strong>Instructions:</strong><br></br>{this.state.directions}<br></br><br></br>
+            <strong>Warnings:</strong><br></br>{this.state.warnings}<br></br><br></br>
+          </p>
+        </article>
+      </ModalTwo>
     );
   }
 }
