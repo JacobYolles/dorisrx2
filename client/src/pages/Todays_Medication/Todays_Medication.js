@@ -94,6 +94,13 @@ class TodaysMedication extends Component {
     })
   }
 
+//   decrementQuantity = (id, num) => {
+//     API2.putInventory(id, num)
+//         .then(
+//           this.setState(this.state.inventory.currentQuantity = this.state.inventory.currentQuantity - this.state.inventory.drugDose) )
+//         .catch(err =>console.log(err));
+// }
+
   // pickImage = (drugForm)=> {
   //   let image;
   //   if(drugForm === 'capsule') {
@@ -143,8 +150,9 @@ class TodaysMedication extends Component {
 
                     <td>
                       <Button
+                        // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
-                        action={this.handleFormSubmit}
+                        action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                         type={"primary"}
                         title={"Taken"}
                       /></td>
@@ -182,7 +190,7 @@ class TodaysMedication extends Component {
 
                     <td><Button
                       className="tButton"
-                      action={this.handleFormSubmit}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                       type={"primary"}
                       title={"Taken"}
                     /></td>

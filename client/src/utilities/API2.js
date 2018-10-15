@@ -18,6 +18,9 @@ export default {
       return axios.post("/api/inventory", inventoryData);
     },
     putInventory: function(id, newQuantity) {
+      console.log("id", id);
+      console.log("newQuantity here", newQuantity);
+      // return axios.put("/api/inventory/" + id, {currentQuantity: newQuantity});
       return axios.put("/api/inventory/" + id, newQuantity);
     }
   };
