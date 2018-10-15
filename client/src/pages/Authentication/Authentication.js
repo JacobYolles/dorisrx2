@@ -5,15 +5,6 @@ import "./Authentication.css"
 import API5 from "../../utilities/API5"
 
 
-const styles = {
-
-  form: {
-    width: 500,
-    margin: "auto",
-  },
-
-}
-
 class Authentication extends Component {
 
 
@@ -76,9 +67,10 @@ class Authentication extends Component {
   render() {
     return (
 
+     
       <Modal>
-        {
-          <form style={styles.form} >
+        
+          <form>
 
             <Input
               id="username"
@@ -103,25 +95,15 @@ class Authentication extends Component {
               type="text"
               placeholder="Email"
             />
-            <Input
-              value={this.state.firstName}
-              name="firstName"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="First Name"
-            />
-             <Input
-              value={this.state.lastName}
-              name="lastName"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="Last Name"
-            />
+   
 
 
           </form>
-        }
+        
       </Modal>
+   
+      
+
 
 
 

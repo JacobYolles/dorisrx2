@@ -31,16 +31,16 @@ const ContactSchema = new Schema({
     },
     locationId: {
         type: String,
-        required: true
+        required: false
     },
     email: {
         type: String,
-        $regex: /@mongodb\.com$/,
-        required: true
+        // $regex: /@mongodb\.com$/,
+        required: false
     },
     phone: {
         type: String,
-        required: true
+        required: false
     },
 })
 

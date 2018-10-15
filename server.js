@@ -1,9 +1,9 @@
 // Dependencies
 const express = require("express")
 const routes = require("./routes");
+const bodyParser = require("body-parser");
 const mongoose = require("mongoose")
 var app = express();
-const bodyParser = require("body-parser");
 // app.use(express.static("public"));
 const PORT = process.env.PORT || 3001;
 

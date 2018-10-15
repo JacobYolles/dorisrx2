@@ -2,7 +2,14 @@ body {
     
     background-image: url("https://image.ibb.co/bZ41Op/blue_squares_powerpoint_backgrounds.jpg");
     background-size: cover;
+    
+    
 }
+
+h1 {
+    padding-top: 50px;
+}
+
 
 #root {
     height: 100%;

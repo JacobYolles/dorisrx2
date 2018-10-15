@@ -46,19 +46,7 @@ class InputForm extends Component {
       this.state.drugFreq ++
     }
 
-    // update the drugFreq based on how many checkmarks are checked
-    // if (this.state.early == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.middle == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.late == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
+  
 
 
     const { name, value } = event.target;
@@ -190,7 +178,7 @@ class InputForm extends Component {
               
                 <p>What time(s) of day is it to be taken? (Check each that applies)</p>
                 <label>
-                Morning
+                <span className="form-padding">Morning</span>
                 <input
                   title="Take it mornings"
                   name="early"
