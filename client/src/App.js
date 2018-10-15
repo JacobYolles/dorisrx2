@@ -9,6 +9,7 @@ import Caregiver from "./pages/Caregiver";
 import TodaysMedication from "./pages/Todays_Medication";
 import Detail from "./pages/Detail";
 import NewMedication from "./pages/New_Medication";
+import MedicationInventory from "./pages/MedicationInventory";
 import { Col, Row, Container } from "reactstrap";
 
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/caregiver" component={Caregiver} />
           <Route exact path="/New_Medication" component={NewMedication} />
           <Route exact path="/Todays_Medication" component={TodaysMedication} />
+          <Route exact path="/MedicationInventory" component={MedicationInventory} />
           <Route exact path="/Detail" component={Detail} />
 
         </Col>

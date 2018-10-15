@@ -116,13 +116,14 @@ class TodaysMedication extends Component {
                   //   key={inventory._id}
 
                   <tr key={inventory._id}>
-
+                  <td>
                     <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                   
+                   <td> <Link
+                      to="/New_Medication">{inventory.drugDose}</Link></td>
+                   <td> <Link
+                      to="/New_Medication">{inventory.drugForm}</Link></td>
 
                     <td>
                       <Button
@@ -152,13 +153,13 @@ class TodaysMedication extends Component {
               <tbody>
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
-
+                  <td>
                     <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                   <td> <Link
+                      to="/New_Medication">{inventory.drugDose}</Link></td>
+                    <td><Link
+                      to="/New_Medication">{inventory.drugForm}</Link></td>
 
                     <td><Button
                       className="tButton"
@@ -185,13 +186,13 @@ class TodaysMedication extends Component {
               <tbody>
                 {late.map(inventory => (
                   <tr key={inventory._id}>
-
+                  <td>
                    <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/New_Medication"><td>{inventory.drugForm}</td></Link>
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                    <td><Link
+                      to="/New_Medication">{inventory.drugDose}</Link></td>
+                    <td><Link
+                      to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td><Button
                       action={this.handleFormSubmit}
 
