@@ -5,7 +5,6 @@ import API from "../../utilities/API";
 import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
 import { Link } from "react-router-dom";
 // import {  FormBtn } from "../../components/Form";
 
@@ -35,9 +34,6 @@ class InputForm extends Component {
     
   
   
-=======
-import "./New_Medication.css";
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
 
   handleInputChange = event => {
@@ -100,8 +96,6 @@ import "./New_Medication.css";
 
 
 
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
-=======
 class New_Medication extends React.Component {
   constructor(props) {
     super(props);
@@ -130,11 +124,8 @@ class New_Medication extends React.Component {
 
   }
 
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
 
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
-=======
     this.setState({
       [name]: value
     });
@@ -143,7 +134,6 @@ class New_Medication extends React.Component {
   showState() {
     console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late);
   }
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
   render() {
     return (
@@ -183,7 +173,6 @@ class New_Medication extends React.Component {
                 name="drugName"
                 placeholder="Drug Name"
               />
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
             <Input
                 title="Drug Dose"
                 value={this.state.drugDose}
@@ -192,9 +181,6 @@ class New_Medication extends React.Component {
                 inputType="number"
                 placeholder="How many in each dose?"
               />
-=======
-
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
               <Input
                 title="Drug size, measuring units and unit type (ex: 150 mg tablet )"
                 value={this.state.drugSizeMeasureType}
@@ -234,12 +220,6 @@ class New_Medication extends React.Component {
                 inputType="date"
                 placeholder="What is the re-order date?"
               />
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
-              
-                <p>What time(s) of day is it to be taken? (Check each that applies)</p>
-                <label>
-                Morning
-=======
               <Input
                 title="How many to take in each dose"
                 value={this.state.drugDose}
@@ -251,7 +231,6 @@ class New_Medication extends React.Component {
               <p>What time(s) of day is it to be taken?</p>
               <label>
                 <span className="form-padding">Morning</span>
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
                 <input
                   title="Take it mornings"
                   name="early"
@@ -279,37 +258,21 @@ class New_Medication extends React.Component {
               </label>
 
               <Button
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
-
-                      // onClick={this.handleFormSubmit}
-                      action={this.handleFormSubmit}
-                      type={"primary"}
-                      title={"Submit"}
-                      
-                    />
-
-                    
-=======
                 className="button-padding"
                 action={this.handleFormSubmit}
                 type={"primary"}
                 title={"Submit"}
 
               />
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
             </form>
 
           </Col>
         </Row>
       </Container>
-<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
-      
-=======
 
 
 
 
->>>>>>> master:client/src/pages/New_Medication/New_Medication.js
     );
   }
 }
