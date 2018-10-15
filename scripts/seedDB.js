@@ -24,15 +24,9 @@ const DrugSeed = [
         drugName: "Amoxicillin",
         drugSizeMeasureType: "100 mg capsule",
         bottleFullQty: 90,
-<<<<<<< HEAD
         taken: false,
         rxDiscard: "2018-10-07",
         rxReorder: "2018-10-04",
-=======
-        bottlePartialQty: 0,
-        rxDiscard: "03-15-2019",
-        rxReorder: "06-23-2019",
->>>>>>> a2ad63edf1849241fe34dfed23511ec32212f898
         drugDose: 1,
         drugFreq: 1,
         early: "true",
