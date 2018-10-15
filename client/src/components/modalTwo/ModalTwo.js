@@ -13,15 +13,10 @@ class ModalTwo extends Component {
 
     this.state = {
       show: true,
-      drugData: props.state.drugData
     };
   }
 
-  noResults = () => {
-    if (this.state.drugData === null) {
-      return ("Sorry, this information is not available")
-    }
-  }
+  
 
   handleHide() {
     this.setState({ show: false });
@@ -43,7 +38,7 @@ class ModalTwo extends Component {
         </Modal.Header>
         <div id = "modalDrugBody">
         <Modal.Body>
-          {this.props.state.drugData}
+          {/* {this.props.state.drugData} */}
           {this.props.children}
         </Modal.Body>
         </div>

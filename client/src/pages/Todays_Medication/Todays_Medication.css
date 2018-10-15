@@ -6,6 +6,11 @@ body {
     
 }
 
+h1 {
+    padding-top: 50px;
+}
+
+
 #root {
     height: 100%;
 }

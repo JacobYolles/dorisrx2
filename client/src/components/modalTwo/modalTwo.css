@@ -4,13 +4,13 @@
 }
 
 #modalDrugBody {
-    height: 400px;
+    height: 300px;
     overflow-y: scroll;
 }
 
 #modalContainerTwo {
-    margin-top: 40px;
-   
+    margin-top: 80px;
+    border-radius: 8px;
 }
 
 #modalHeader {
