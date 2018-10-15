@@ -4,6 +4,7 @@ const routes = require("./routes");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose")
 var app = express();
+const bodyParser = require("body-parser");
 // app.use(express.static("public"));
 const PORT = process.env.PORT || 3001;
 
@@ -21,7 +22,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/dorisrx");
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
-  console.log("hey");
 });
 
 

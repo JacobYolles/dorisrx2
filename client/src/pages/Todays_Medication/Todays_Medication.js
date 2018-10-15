@@ -33,6 +33,7 @@ class TodaysMedication extends Component {
   this.state = {
     inventory: [],
     drugname: "",
+    currentQuantity: "",
     bottleFullQuantity: "",
     bottlePartialQuantity: "",
     drugDose: "",
@@ -55,6 +56,7 @@ class TodaysMedication extends Component {
         this.setState({
           inventory: res.data,
           drugName: "",
+          currentQuantity: "",
           bottleFullQuantity: "",
           bottlePartialQuantity: "",
           drugDose: "",
@@ -75,11 +77,21 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
-  handleFormSubmit(drugName, quantity, dose) {
+  handleFormSubmit(drugName, quantity, dose, id) {
     console.log(drugName);
     console.log(quantity);
     console.log(dose);
-    console.log(this.state);
+    console.log(id);
+    let updatedQuantity = quantity - dose;
+    let newQuantity = {
+      currentQuantity: updatedQuantity
+    }
+    console.log(newQuantity);
+    API2.putInventory(id, newQuantity).then( res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
 
   // pickImage = (drugForm)=> {
@@ -204,12 +216,12 @@ class TodaysMedication extends Component {
                       className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td><Button
-                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose)}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
 
                       type={"primary"}
                       title={"Taken"}
-                      drugName={inventory.drugName}
-                      quantity={inventory.currentQuantity}
+                      // drugName={inventory.drugName}
+                      // quantity={inventory.currentQuantity}
                     /></td>
                   </tr>
                 ))}
