@@ -32,6 +32,7 @@ class TodaysMedication extends Component {
   // component did mount goes below the states.
   this.state = {
     inventory: [],
+    disabled: false,
     drugname: "",
     currentQuantity: "",
     bottleFullQuantity: "",
@@ -78,7 +79,6 @@ class TodaysMedication extends Component {
   }
 
   handleFormSubmit(drugName, quantity, dose, id) {
-    console.log(drugName);
     console.log(quantity);
     console.log(dose);
     console.log(id);
@@ -115,6 +115,8 @@ class TodaysMedication extends Component {
     const early = this.state.inventory.filter(drug => (drug.early === true || drug.early === "true"));
     const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
     const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
+
+   
     // console.log("mid mid", mid);
     return (
 
@@ -153,8 +155,10 @@ class TodaysMedication extends Component {
                         // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
                         action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
+                        disabled={!this.state.value}
                         type={"primary"}
                         title={"Taken"}
+                        
                       /></td>
                   </tr>
                 ))}
