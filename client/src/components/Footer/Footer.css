@@ -57,7 +57,7 @@ ul#footer-list {
 
 .font {
     
-    font: 400 30px/.5 'Berkshire Swash', Helvetica, sans-serif;
+    font: 400 30px/.5 'Berkshire Swash', Helvetica, sans-serif !important;
     color: #ededed;
     text-shadow: 2px 2px 0px #2b2b2b , 3px 5px 3px black;
       
