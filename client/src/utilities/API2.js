@@ -16,5 +16,8 @@ export default {
     // Saves a drug to the database
     saveInventory: function(inventoryData) {
       return axios.post("/api/inventory", inventoryData);
+    },
+    putInventory: function(id, newQuantity) {
+      return axios.put("/api/inventory/" + id, newQuantity);
     }
   };

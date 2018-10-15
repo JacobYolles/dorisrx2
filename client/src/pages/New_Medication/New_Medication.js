@@ -135,32 +135,34 @@ class New_Medication extends React.Component {
         <Row>
           <Col size="md-6">
 
-            <h1 className="new-M-h1">Prescription Bottle Inputter</h1>
+            <h1 className="new-M-h1">Medication Input</h1>
+
 
             <form className="table-background">
+            <p> Please insert your medication information below:</p>
               <Input
-                title="Prescription Number"
+                title="Prescription Number:"
                 value={this.state.rxNum}
                 onChange={this.handleInputChange}
                 name="rxNum"
                 placeholder="Prescription Number"
               />
               <Input
-                title="Pharmacy Name"
+                title="Pharmacy Name:"
                 value={this.state.pharmName}
                 onChange={this.handleInputChange}
                 name="pharmName"
                 placeholder="Pharmacy Name"
               />
               <Input
-                title="Doctor Name"
+                title="Doctors Name:"
                 value={this.state.doctorName}
                 onChange={this.handleInputChange}
                 name="doctorName"
                 placeholder="Doctor Name"
               />
               <Input
-                title="Drug Name"
+                title="Drug Name:"
                 value={this.state.drugName}
                 onChange={this.handleInputChange}
                 name="drugName"
@@ -168,14 +170,14 @@ class New_Medication extends React.Component {
               />
 
               <Input
-                title="Drug size, measuring units and type"
+                title="Drug size, measuring units and type:"
                 value={this.state.drugSizeMeasureType}
                 onChange={this.handleInputChange}
                 name="drugSizeMeasureType"
                 placeholder="Drug size, measure and type (ex: 150 mg tablet ) "
               />
               <Input
-                title="Bottle capacity when full"
+                title="Bottle capacity when full:"
                 value={this.state.bottleFullQty}
                 onChange={this.handleInputChange}
                 name="bottleFullQty"
@@ -183,7 +185,7 @@ class New_Medication extends React.Component {
                 placeholder="How many in a full bottle (Qty)"
               />
               <Input
-                title="How many in the bottle if not full when entering this the first time."
+                title="Current quantity in bottle:"
                 value={this.state.bottlePartialQuanitity}
                 onChange={this.handleInputChange}
                 name="bottlePartialQuanitity"
@@ -191,7 +193,7 @@ class New_Medication extends React.Component {
                 placeholder="If this is not a full bottle, how many are left? (otherwise leave blank)"
               />
               <Input
-                title="Discard Date"
+                title="Discard Date:"
                 value={this.state.rxDiscard}
                 onChange={this.handleInputChange}
                 name="rxDiscard"
@@ -199,7 +201,7 @@ class New_Medication extends React.Component {
                 placeholder="What is the discard date?"
               />
               <Input
-                title="Reorder Date"
+                title="Reorder Date:"
                 value={this.state.rxReorder}
                 onChange={this.handleInputChange}
                 name="rxReorder"
@@ -207,7 +209,7 @@ class New_Medication extends React.Component {
                 placeholder="What is the re-order date?"
               />
               <Input
-                title="How many to take in each dose"
+                title="How much do you take per dose:"
                 value={this.state.drugDose}
                 onChange={this.handleInputChange}
                 name="drugDose"
