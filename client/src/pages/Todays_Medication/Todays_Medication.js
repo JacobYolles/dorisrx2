@@ -103,11 +103,11 @@ class TodaysMedication extends Component {
 
         <Row>
           <Col className="test col-md-4">
-            <h1 id="times">early</h1>
-            <table className="users">
+            <h1 id="times">Morning Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
-                  <th>Drug Name</th>
+                  <th width="100">Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
                   <th></th>
@@ -119,12 +119,15 @@ class TodaysMedication extends Component {
 
                   <tr key={inventory._id}>
 
-                    <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/InputForm"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/InputForm"><td>{inventory.drugForm}</td></Link>
+                    <td><Link
+                    className="link"
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                    <td><Link
+                    className="link"
+                      to="/New_Medication">{inventory.drugDose}</Link></td>
+                    <td><Link
+                    className="link"
+                      to="/New_Medication">{inventory.drugForm}</Link></td>
 
                     <td>
                       <Button
@@ -141,8 +144,8 @@ class TodaysMedication extends Component {
           </Col>
 
           <Col className="test col-md-4">
-            <h1 id="times">mid</h1>
-            <table className="users">
+            <h1 id="times">Midday Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -155,12 +158,15 @@ class TodaysMedication extends Component {
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
 
-                    <Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td></Link>
-                    <Link
-                      to="/InputForm"><td>{inventory.drugDose}</td></Link>
-                    <Link
-                      to="/InputForm"><td>{inventory.drugForm}</td></Link>
+                    <td><Link
+                      className="link"
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                      <td><Link
+                      className="link"
+                      to="/Detail">{inventory.drugDose}</Link></td>
+                      <td><Link
+                      className="link"
+                      to="/Detail">{inventory.drugForm}</Link></td>
 
                     <td><Button
                       className="tButton"
@@ -175,8 +181,8 @@ class TodaysMedication extends Component {
             </table>
           </Col>
           <Col className="test col-md-4">
-            <h1 id="times">late</h1>
-            <table className="users">
+            <h1 id="times">Evening Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -189,23 +195,21 @@ class TodaysMedication extends Component {
                   <tr key={inventory._id}>
 
                    <td><Link
-                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}><td>{inventory.drugName}</td>
-                  </Link></td>
-
+                      className="link"
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
                     <td><Link
-                      to="/InputForm"><td>{inventory.drugDose}</td>
-                    </Link></td>
-
+                      className="link"
+                      to="/New_Medication">{inventory.drugDose}</Link></td>
                     <td><Link
-                      to="/InputForm"><td>{inventory.drugForm}</td>
-                    </Link></td>
-                    
+                      className="link"
+                      to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td><Button
-                      action={this.handleFormSubmit}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose)}
 
                       type={"primary"}
                       title={"Taken"}
                       drugName={inventory.drugName}
+                      quantity={inventory.currentQuantity}
                     /></td>
                   </tr>
                 ))}

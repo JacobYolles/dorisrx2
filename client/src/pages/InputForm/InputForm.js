@@ -5,6 +5,7 @@ import API from "../../utilities/API";
 import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
 import { Link } from "react-router-dom";
 // import {  FormBtn } from "../../components/Form";
 
@@ -34,6 +35,9 @@ class InputForm extends Component {
     
   
   
+=======
+import "./New_Medication.css";
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
 
   handleInputChange = event => {
@@ -96,19 +100,61 @@ class InputForm extends Component {
 
 
 
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
+=======
+class New_Medication extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ndcNum: "",
+      rxNum: "",
+      pharmName: "",
+      doctorName: "",
+      drugName: "",
+      drugForm: "",
+      drugFormSizeAndMeasure: "",
+      currentQty: "",
+      bottleFullQty: "",
+      rxDiscard: "",
+      rxReorder: "",
+      drugDose: "",
+      drugFreq: "",
+      early: "",
+      middle: "",
+      late: ""
+
+    };
+    // console.log("state-early :" + this.state.early + "state-middle :" + this.state.middle + "state-late :" + this.state.late );
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+
+  }
+
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
 
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
+=======
+    this.setState({
+      [name]: value
+    });
+    this.showState()
+  }
+  showState() {
+    console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late);
+  }
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
 
   render() {
     return (
 
-<Container fluid>
+      <Container fluid>
         <Row>
           <Col size="md-6">
-           
-              <h1>Prescription Bottle Inputter</h1>
-            
-            <form>
+
+            <h1 className="new-M-h1">Prescription Bottle Inputter</h1>
+
+            <form className="table-background">
               <Input
                 title="Prescription Number"
                 value={this.state.rxNum}
@@ -137,6 +183,7 @@ class InputForm extends Component {
                 name="drugName"
                 placeholder="Drug Name"
               />
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
             <Input
                 title="Drug Dose"
                 value={this.state.drugDose}
@@ -145,6 +192,9 @@ class InputForm extends Component {
                 inputType="number"
                 placeholder="How many in each dose?"
               />
+=======
+
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
               <Input
                 title="Drug size, measuring units and unit type (ex: 150 mg tablet )"
                 value={this.state.drugSizeMeasureType}
@@ -184,10 +234,24 @@ class InputForm extends Component {
                 inputType="date"
                 placeholder="What is the re-order date?"
               />
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
               
                 <p>What time(s) of day is it to be taken? (Check each that applies)</p>
                 <label>
                 Morning
+=======
+              <Input
+                title="How many to take in each dose"
+                value={this.state.drugDose}
+                onChange={this.handleInputChange}
+                name="drugDose"
+                inputType="number"
+                placeholder="How many in each dose?"
+              />
+              <p>What time(s) of day is it to be taken?</p>
+              <label>
+                <span className="form-padding">Morning</span>
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
                 <input
                   title="Take it mornings"
                   name="early"
@@ -197,7 +261,7 @@ class InputForm extends Component {
               </label>
 
               <label>
-                Mid-Day
+                <span className="form-padding">Mid-Day</span>
                 <input
                   name="middle"
                   type="checkbox"
@@ -206,7 +270,7 @@ class InputForm extends Component {
               </label>
 
               <label>
-                Evening
+                <span className="form-padding">Evening</span>
                 <input
                   name="late"
                   type="checkbox"
@@ -215,6 +279,7 @@ class InputForm extends Component {
               </label>
 
               <Button
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
 
                       // onClick={this.handleFormSubmit}
                       action={this.handleFormSubmit}
@@ -224,12 +289,27 @@ class InputForm extends Component {
                     />
 
                     
+=======
+                className="button-padding"
+                action={this.handleFormSubmit}
+                type={"primary"}
+                title={"Submit"}
+
+              />
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
             </form>
-          
-            </Col>
+
+          </Col>
         </Row>
       </Container>
+<<<<<<< HEAD:client/src/pages/InputForm/InputForm.js
       
+=======
+
+
+
+
+>>>>>>> master:client/src/pages/New_Medication/New_Medication.js
     );
   }
 }

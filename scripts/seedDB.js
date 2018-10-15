@@ -75,8 +75,12 @@ const DrugSeed = [
         rxNum: "54321",
         pharmName: "King Soopers #14",
         doctorName: "Dr. Jones",
+<<<<<<< HEAD
         drugName: "Allopurinol(Zyloprim)",
         drugDose: 1,
+=======
+        drugName: "Allopurinol",
+>>>>>>> master
         drugSizeMeasureType: "60 mg pill",
         bottleFullQty: 90,
         bottlePartialQty: 0,
@@ -553,8 +557,13 @@ const InventorySeed = [
         late: false,
         },
         {
+<<<<<<< HEAD
         drugName: "Allopurinol(Zyloprim)",
         currentQuantity: 9,
+=======
+        drugName: "Allopurinol",
+        currentQuantity: 09,
+>>>>>>> master
         taken: false,
         drugDose: 1,
         drugFrequency: 1,

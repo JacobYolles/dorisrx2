@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Jumbotron } from "reactstrap";
 import API4 from "../../utilities/API4";
+import "./detail.css"
 
 class Detail extends Component {
   // state = {
