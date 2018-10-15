@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API4 from "../../utilities/API4";
 import ModalTwo from "../../components/modalTwo"
-import "./Detail.css"
+import "./detail.css"
 
 
 
