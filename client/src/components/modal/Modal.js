@@ -40,8 +40,8 @@ class ModalOne extends Component {
           </Modal.Body>
           <Modal.Footer>
             <div id ="modalButtons">
-              <Button onClick={this.handleHide} href = "/reports">Log In</Button>
-              <Button onClick={this.handleHide} href = "/caregiver">New User</Button>
+              <Button onClick={this.handleHide} href = "/Todays_Medication">Log In</Button>
+              <Button onClick={this.handleHide} href = "/InputForm">New User</Button>
             </div>
 
           </Modal.Footer>

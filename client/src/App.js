@@ -4,11 +4,14 @@ import NavTabs from "./components/NavTabs/NavTabs";
 import Footer from "./components/Footer/Footer";
 import Authentication from "./pages/Authentication";
 import User from "./pages/User";
-import Reports from "./pages/Reports"
+// import Reports from "./pages/Reports"
 import Caregiver from "./pages/Caregiver";
 import TodaysMedication from "./pages/Todays_Medication";
 import Detail from "./pages/Detail";
-import New_Medication from "./pages/New_Medication";
+import InputForm from "./pages/InputForm";
+import ContactForm from "./pages/ContactForm";
+import ShelfReport from "./pages/ShelfReport";
+
 import { Col, Row, Container } from "reactstrap";
 
 
@@ -22,10 +25,11 @@ const App = () => (
       <Row>
         <Col size="md-6">
           <Route exact path="/" component={Authentication} />
-          <Route exact path="/reports" component={Reports} />
+          <Route exact path="/ShelfReport" component={ShelfReport} />
           <Route path="/user" component={User} />
           <Route path="/caregiver" component={Caregiver} />
-          <Route exact path="/New_Medication" component={New_Medication} />
+          <Route exact path="/InputForm" component={InputForm} />
+          <Route exact path="/ContactForm" component={ContactForm} />
           <Route exact path="/Todays_Medication" component={TodaysMedication} />
           <Route exact path="/Detail" component={Detail} />
 
