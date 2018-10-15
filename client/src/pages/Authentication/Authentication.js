@@ -81,6 +81,7 @@ class Authentication extends Component {
           <form style={styles.form} >
 
             <Input
+              id="username"
               value={this.state.username}
               name="username"
               onChange={this.handleInputChange}
@@ -88,6 +89,7 @@ class Authentication extends Component {
               placeholder="User Name"
             />
             <Input
+              id="password"
               value={this.state.password}
               name="password"
               onChange={this.handleInputChange}

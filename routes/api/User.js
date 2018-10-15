@@ -1,3 +1,4 @@
+// var express = require("express")
 const router = require("express").Router();
 const userController = require("../../controllers/userController");
 
@@ -6,6 +7,10 @@ router.route("/authentication")
   .get(userController.findAll)
   .post(userController.create);
 
+
+// router.get("/", function (req, res) {
+  
+// })
 // Matches with "/api/books/:id"
 router
   .route("/:id")
