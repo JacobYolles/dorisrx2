@@ -9,7 +9,6 @@ const NavTabs = () => (
       Log In / Out
         </a>
 
-<<<<<<< HEAD
     {/* <a className="navbar-brand" href="/caregiver">
       Admin
         </a> 
@@ -17,14 +16,11 @@ const NavTabs = () => (
          <a className="navbar-brand" href="/user">
       User
         </a> 
-=======
->>>>>>> 7ead6cddfbf7f5da54446b1b7062204e3f7e109e
 
         <a className="navbar-brand" href="/Todays_Medication">
       Today's Medications
         </a>
 
-<<<<<<< HEAD
     <a className="navbar-brand" href="/New_Medication">
       New Medication
         </a>
@@ -39,7 +35,6 @@ const NavTabs = () => (
         </a>
 
     <a className="navbar-brand" href="/Detail">
-=======
 
          <a className="navbar-brand" href="/InputForm">
       New Medication
@@ -50,11 +45,6 @@ const NavTabs = () => (
       Contacts
         </a>
 
-
-        {/* <a className="navbar-brand" href="/Detail">
->>>>>>> 7ead6cddfbf7f5da54446b1b7062204e3f7e109e
-      Medication Details
-        </a> 
 
         <a className="navbar-brand" href="/ShelfReport">
       Drug Shelf and Reorder Report

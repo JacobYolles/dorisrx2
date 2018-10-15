@@ -29,20 +29,6 @@ class TodaysMedication extends Component {
   constructor(props) {
     super(props);
 
-<<<<<<< HEAD
-    // component did mount goes below the states.
-    this.state = {
-      inventory: [],
-      drugname: "",
-      bottleFullQuantity: "",
-      bottlePartialQuantity: "",
-      drugDose: "",
-      drugFrequency: "",
-      taken: false
-    }
-
-    this.handleFormSubmit = this.handleFormSubmit.bind(this);
-=======
   // component did mount goes below the states.
   this.state = {
     inventory: [],
@@ -53,13 +39,12 @@ class TodaysMedication extends Component {
     drugDose: "",
     drugFrequency: "",
     taken: false
->>>>>>> 7ead6cddfbf7f5da54446b1b7062204e3f7e109e
   }
 
 
   componentDidMount() {
-    this.loadInventory();
-    this.loadDrugs();
+    this.loadInventory()
+    this.loadDrugs()
   }
 
   loadInventory = () => {

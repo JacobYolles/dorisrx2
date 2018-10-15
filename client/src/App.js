@@ -8,15 +8,12 @@ import User from "./pages/User";
 import Caregiver from "./pages/Caregiver";
 import TodaysMedication from "./pages/Todays_Medication";
 import Detail from "./pages/Detail";
-<<<<<<< HEAD
 import New_Medication from "./pages/New_Medication";
 import MedicationInventory from "./pages/MedicationInventory";
-=======
 import InputForm from "./pages/InputForm";
 import ContactForm from "./pages/ContactForm";
 import ShelfReport from "./pages/ShelfReport";
 
->>>>>>> 7ead6cddfbf7f5da54446b1b7062204e3f7e109e
 import { Col, Row, Container } from "reactstrap";
 
 
