@@ -5,15 +5,6 @@ import "./Authentication.css"
 
 
 
-const styles = {
-
-  form: {
-    width: 500,
-    margin: "auto",
-  },
-
-}
-
 class Authentication extends Component {
 
   state = {
@@ -51,23 +42,17 @@ class Authentication extends Component {
   render() {
     return (
 
+     
       <Modal>
-        {
-          <form style={styles.form} >
+        
+          <form>
 
             <Input
               value={this.state.firstName}
-              name="firstName"
+              name="userName"
               onChange={this.handleInputChange}
               type="text"
-              placeholder="First Name"
-            />
-            <Input
-              value={this.state.lastName}
-              name="lastName"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="Last Name"
+              placeholder="User Name"
             />
             <Input
               value={this.state.password}
@@ -78,8 +63,11 @@ class Authentication extends Component {
             />
 
           </form>
-        }
+        
       </Modal>
+   
+      
+
 
 
 
