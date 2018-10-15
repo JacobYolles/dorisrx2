@@ -24,7 +24,10 @@ module.exports = {
   update: function(req, res) {
     db.Inventory
       .findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => {
+        console.log("req.body: ", req.body);
+        res.json(dbModel)
+      })
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {

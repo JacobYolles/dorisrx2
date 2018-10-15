@@ -30,7 +30,6 @@ const NavTabs = () => (
       New Medication
         </a>
 
-<<<<<<< HEAD
         <a className="navbar-brand" href="/ContactForm">
       Contacts
         </a>
@@ -43,11 +42,6 @@ const NavTabs = () => (
         <a className="navbar-brand" href="/ShelfReport">
       Drug Shelf and Reorder Report
         </a>
-=======
-        {/* <a className="navbar-brand" href="/Detail">
-      Medication Details
-        </a> */}
->>>>>>> master
 
 </nav>
 
