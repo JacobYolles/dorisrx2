@@ -6,13 +6,21 @@ import { Modal, Button } from "react-bootstrap"
 
 class ModalTwo extends Component {
   constructor(props, context) {
+    console.log(props)
     super(props, context);
 
     this.handleHide = this.handleHide.bind(this);
 
     this.state = {
-      show: true
+      show: true,
+      drugData: props.state.drugData
     };
+  }
+
+  noResults = () => {
+    if (this.state.drugData === null) {
+      return ("Sorry, this information is not available")
+    }
   }
 
   handleHide() {
@@ -35,6 +43,7 @@ class ModalTwo extends Component {
         </Modal.Header>
         <div id = "modalDrugBody">
         <Modal.Body>
+          {this.props.state.drugData}
           {this.props.children}
         </Modal.Body>
         </div>
@@ -46,6 +55,8 @@ class ModalTwo extends Component {
     );
   }
 }
+
+
 
 
 export default ModalTwo;

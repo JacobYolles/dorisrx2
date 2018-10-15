@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API4 from "../../utilities/API4";
 import ModalTwo from "../../components/modalTwo"
-import "./detail.css"
+import "./Detail.css"
 
 
 
@@ -30,25 +30,19 @@ class Detail extends Component {
   }
 
 
-  fdaData = () => {
-    API4.getFdaDataValue()
-      .then(res => {
-        // console.log({drugsValues})
 
-
-
-      })
-
-  }
-
-  // deleteFdaValue
+  
 
   loadDrugs = () => {
     API4.getFdaDataValue(this.state.drugName)
       .then(res => {
-        console.log({ brand_name: res.data.results[0].openfda.brand_name, warnings: res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage })
+       // console.log({ brand_name: res.data.results[0].openfda.brand_name, warnings: res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage })
 
         this.setState({ "brand_name": res.data.results[0].openfda.brand_name, "warnings": res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+
+        if(!res.data.results) {
+          this.setState()
+        }
 
       })
       .catch(err => console.log(err));
@@ -56,10 +50,6 @@ class Detail extends Component {
 
   }
 
-  // loadFDA = () => {
-
-
-  // }
 
   render() {
     return (
