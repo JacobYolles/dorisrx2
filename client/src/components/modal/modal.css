@@ -27,3 +27,8 @@
     margin: 0!important;
     margin-left: 5px!important;
 } */
+
+
+.modal-footer .btn+.btn {
+    margin-bottom: auto;
+}
