@@ -1,11 +1,15 @@
 // Dependencies
 const express = require("express")
 const routes = require("./routes");
+const bodyParser = require("body-parser");
 const mongoose = require("mongoose")
 var app = express();
 // app.use(express.static("public"));
 const PORT = process.env.PORT || 3001;
 
+// Define middleware here
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
