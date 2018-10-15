@@ -18,7 +18,11 @@ export default {
       
       return axios.post("/api/InputForm", rxData);
     },
-
+    saveContact: function(rxData) {
+      console.log("ctcData: " , rxData);
+      
+      return axios.post("/api/ContactForm", rxData);
+    },
 
   };
 

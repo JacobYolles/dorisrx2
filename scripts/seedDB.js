@@ -427,7 +427,8 @@ const ContactsSeed = [
         doctorName: "",
         address: "789 South Southern Street",
         city: "Littleton",
-        state: "CO", "zip": 80128,
+        state: "CO", 
+        zip: "80128",
         locationId: "RAF777",
         email: "drmatlock@msnbc.com",
         phone: "720-555-5555"
@@ -437,7 +438,8 @@ const ContactsSeed = [
         doctorName: "",
         address: "2355 S Lowell Blvd",
         city: "Littleton",
-        state: "CO", "zip": 80127,
+        state: "CO", 
+        zip: "80127",
         locationId: "14",
         email: "ksoopers14@gmail.com",
         phone: "720-555-5554"
@@ -447,7 +449,8 @@ const ContactsSeed = [
         doctorName: "",
         address: "6882 N Sheridan",
         city: "Westminster",
-        state: "CO", "zip": 80103,
+        state: "CO", 
+        zip: "80103",
         locationId: "2",
         email: "walmartpham2@gmail.com",
         phone: "720-555-5533"
@@ -458,7 +461,8 @@ const ContactsSeed = [
         doctorName: "Dr. Smith",
         address: "8882 N Sheridan",
         city: "Westminster",
-        state: "CO", "zip": 80103,
+        state: "CO", 
+        zip: "80103",
         locationId: "",
         email: "drsmith2@gmail.com",
         phone: "720-551-5533"
@@ -468,7 +472,8 @@ const ContactsSeed = [
         doctorName: "Dr. Jones",
         address: "9553 N 31st Ave",
         city: "Lakewood",
-        state: "CO", "zip": 80112,
+        state: "CO", 
+        zip: "80112",
         locationId: "2",
         email: "drjones@gmail.com",
         phone: "720-550-5333"
@@ -478,7 +483,8 @@ const ContactsSeed = [
         doctorName: "Dr. Jekyl",
         address: "8882 N Wadsworth",
         city: "Arvada",
-        state: "CO", "zip": 80121,
+        state: "CO", 
+        zip: "80121",
         locationId: "",
         email: "drjekyl@gmail.com",
         phone: "720-551-5500"
@@ -488,7 +494,8 @@ const ContactsSeed = [
         doctorName: "",
         address: "6882 N Sheridan",
         city: "Westminster",
-        state: "CO", "zip": 80103,
+        state: "CO", 
+        zip: "80103",
         locationId: "2",
         email: "riteaid22@gmail.com",
         phone: "303-555-5533"
@@ -498,7 +505,8 @@ const ContactsSeed = [
         doctorName: "Dr. Johnson",
         address: "8882 N Wadsworth",
         city: "Arvada",
-        state: "CO", "zip": 80121,
+        state: "CO", 
+        zip: "80121",
         locationId: "",
         email: "drjekyl@gmail.com",
         phone: "303-123-5000"
@@ -508,7 +516,8 @@ const ContactsSeed = [
         doctorName: "",
         address: "8882 N Wadsworth",
         city: "Arvada",
-        state: "CO", "zip": 80121,
+        state: "CO", 
+        zip: "80121",
         locationId: "",
         email: "drjekyl@gmail.com",
         phone: "303-123-5000"
@@ -518,7 +527,8 @@ const ContactsSeed = [
         doctorName: "Dr. Steele",
         address: "1225 N Federal",
         city: "Westminster",
-        state: "CO", "zip": 80121,
+        state: "CO", 
+        zip: "80121",
         locationId: "",
         email: "drSteeles@gmail.com",
         phone: "303-123-5000"
@@ -533,7 +543,7 @@ const InventorySeed = [
 
     {
         drugName: "Amoxicillin",
-        currentQuantity: 90,
+        currentQuantity: 83,
         taken: false,
         drugDose: 2,
         drugFrequency: 1,
@@ -544,7 +554,7 @@ const InventorySeed = [
         },
         {
         drugName: "Allopurinol(Zyloprim)",
-        currentQuantity: 90,
+        currentQuantity: 9,
         taken: false,
         drugDose: 1,
         drugFrequency: 1,
@@ -555,7 +565,7 @@ const InventorySeed = [
         },
         {
         drugName: "Mandol",
-        currentQuantity: 90,
+        currentQuantity: 51,
         taken: false,
         drugDose: 1,
         drugFrequency: 1,
@@ -566,7 +576,7 @@ const InventorySeed = [
         },
         {
         drugName: "Savella",
-        currentQuantity: 90,
+        currentQuantity: 36,
         taken: false,
         drugDose: 1,
         drugFrequency: 2,
@@ -577,7 +587,7 @@ const InventorySeed = [
         },
         {
         drugName: "Ramelteon",
-        currentQuantity: 90,
+        currentQuantity: 4,
         taken: false,
         drugDose: 2,
         drugFrequency: 2,
@@ -610,7 +620,7 @@ const InventorySeed = [
         },
         {
         drugName: "Retapamulin",
-        currentQuantity: 90,
+        currentQuantity: 8,
         taken: false,
         drugDose: 1,
         drugFrequency: 2,

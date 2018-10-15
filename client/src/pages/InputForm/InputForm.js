@@ -84,11 +84,11 @@ class InputForm extends Component {
         bottlePartialQty: this.state.bottlePartialQty,
         rxDiscard: this.state.rxDiscard,
         rxReorder: this.state.rxReorder,
-        drugFreq: this.state.drugFreq,
+        drugFrequency: this.state.drugFreq,
         early: this.state.early,
         middle: this.state.middle,
         late: this.state.late,
-        currentQty: this.state.currentQty
+        currentQuantity: this.state.currentQty
       })
         
     }
