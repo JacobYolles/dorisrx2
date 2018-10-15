@@ -5,128 +5,100 @@ import API from "../../utilities/API";
 import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
-import "./New_Medication.css";
+import { Link } from "react-router-dom";
+// import {  FormBtn } from "../../components/Form";
+import "./inputForm.css";
 
 
 
-// class New_Medication extends React.Component {
+class InputForm extends Component {
 
-//   state = {
-//     drug: [],
-//         ndcNum: "38-991-23",
-//         rxNum: "8813S",
-//         pharmName: "Save On 10",
-//         doctorName: "Dr. Reese",
-//         drugName: "Ramelteon",
-//         drugForm: "tablet",
-//         drugFormSizeAndMeasure: "300 mg",
-//         currentQty: 15,
-//         bottleFullQty: 90,
-//         taken: false,
-//         rxDiscard: "2019-02-02",
-//         rxReorder: "2019-03-03",
-//         drugDose: 1,
-//         drugFreq: 2,
-//         early: true,
-//         middle: false,
-//         late: true,
-//         folders: ['early', 'mid', 'late'],
-//         values: []
-//   }
-
-//   // componentDidMount() {
-//   //   this.loadDrugData()
-//   // }
-
-//   handleChange = (e) => {
-//     let options = e.target.options;
-//     let selectedOptions = [];
-
-//     for(let i = 0; i < options.length; i++) {
-//         if( options[i].selected ) {
-//             selectedOptions.push(options[i].value);
-//         }
-//     }
-
-//     this.setState({values: selectedOptions});
-// }
-
-// handleSubmit = (e) => {
-//   e.preventDefault();
-//   console.log('this.state.values' + this.state.values);
-// }
-// // componentDidMount() {
-// //   // alert("here")
-// //   API.getDrugs()
-// //   .then(res => this.setState({
-// //     drugs: res.data
-// //   }))
-// //   .catch(err => console.log(err))
-// // }
-
-
-//   render() {
-//     return (
-//       <div>
-//         <h1>Input a New Prescription</h1>
-//         <form onSubmit={this.handleSubmit}>
-//                 <select multiple="true" value={this.state.values} onChange={this.handleChange}>
-//                     {this.state.folders.map((item, index) => 
-//                         <option value={index} key={index}>{item}</option>    
-//                     )}
-//                 </select>
-//                 <button type="submit">Go</button>
-//             </form>
-//       </div>
-
-//     )
-//   }
-
-
-// }
-
-class New_Medication extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ndcNum: "",
-      rxNum: "",
-      pharmName: "",
-      doctorName: "",
-      drugName: "",
-      drugForm: "",
-      drugFormSizeAndMeasure: "",
-      currentQty: "",
-      bottleFullQty: "",
-      rxDiscard: "",
-      rxReorder: "",
-      drugDose: "",
-      drugFreq: "",
-      early: "",
-      middle: "",
-      late: ""
-
+  state = {
+        drugs: [],
+        ndcNum: "12345",
+        rxNum:"",
+        pharmName:"",
+        doctorName:"", 
+        drugName:"",
+        drugDose: 0,
+        drugSizeMeasureType:"", 
+        bottleFullQty: 0,
+        bottlePartialQty: 0, 
+        rxDiscard:"", 
+        rxReorder:"",
+        drugFreq:0, 
+        early:false, 
+        middle: false, 
+        late: false, 
+        currentQty: 0
     };
-    // console.log("state-early :" + this.state.early + "state-middle :" + this.state.middle + "state-late :" + this.state.late );
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-
-  }
+    
+  
+  
 
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
-    const name = target.name;
+  handleInputChange = event => {
+    if(event.target.type === 'checkbox'){
+      event.target.checked = event.target.value
+    }
+    if(event.target.value === 'on'){
+      event.target.value = true
+      this.state.drugFreq ++
+    }
 
+    // update the drugFreq based on how many checkmarks are checked
+    // if (this.state.early == "true"){
+    //   this.state.drugFreq = this.state.drugFreq +1
+    // }
+
+    // if (this.state.middle == "true"){
+    //   this.state.drugFreq = this.state.drugFreq +1
+    // }
+
+    // if (this.state.late == "true"){
+    //   this.state.drugFreq = this.state.drugFreq +1
+    // }
+
+
+
+    const { name, value } = event.target;
     this.setState({
       [name]: value
     });
-    this.showState()
-  }
-  showState() {
-    console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late);
-  }
+  };
+
+
+  
+  handleFormSubmit = event => {
+    event.preventDefault();
+    // if (this.state.title && this.state.author) {
+    if (true) {
+      API.saveDrug({
+        ndcNum: "12345",
+        rxNum: this.state.rxNum,
+        pharmName: this.state.pharmName,
+        doctorName: this.state.doctorName,
+        drugName: this.state.drugName,
+        drugDose: this.state.drugDose,
+        drugSizeMeasureType: this.state.drugSizeMeasureType,
+        bottleFullQty: this.state.bottleFullQty,
+        bottlePartialQty: this.state.bottlePartialQty,
+        rxDiscard: this.state.rxDiscard,
+        rxReorder: this.state.rxReorder,
+        drugFrequency: this.state.drugFreq,
+        early: this.state.early,
+        middle: this.state.middle,
+        late: this.state.late,
+        currentQuantity: this.state.currentQty
+      })
+        
+    }
+  };
+
+
+
+
+
 
   render() {
     return (
@@ -168,9 +140,16 @@ class New_Medication extends React.Component {
                 name="drugName"
                 placeholder="Drug Name"
               />
-
+            <Input
+                title="Drug Dose"
+                value={this.state.drugDose}
+                onChange={this.handleInputChange}
+                name="drugDose"
+                inputType="number"
+                placeholder="How many in each dose?"
+              />
               <Input
-                title="Drug size, measuring units and type:"
+                title="Drug size, measuring units and unit type (ex: 150 mg tablet )"
                 value={this.state.drugSizeMeasureType}
                 onChange={this.handleInputChange}
                 name="drugSizeMeasureType"
@@ -185,10 +164,10 @@ class New_Medication extends React.Component {
                 placeholder="How many in a full bottle (Qty)"
               />
               <Input
-                title="Current quantity in bottle:"
-                value={this.state.bottlePartialQuanitity}
+                title="How many in the bottle if not full when entering this the first time."
+                value={this.state.bottlePartialQty}
                 onChange={this.handleInputChange}
-                name="bottlePartialQuanitity"
+                name="bottlePartialQty"
                 inputType="number"
                 placeholder="If this is not a full bottle, how many are left? (otherwise leave blank)"
               />
@@ -208,17 +187,10 @@ class New_Medication extends React.Component {
                 inputType="date"
                 placeholder="What is the re-order date?"
               />
-              <Input
-                title="How much do you take per dose:"
-                value={this.state.drugDose}
-                onChange={this.handleInputChange}
-                name="drugDose"
-                inputType="number"
-                placeholder="How many in each dose?"
-              />
-              <p>What time(s) of day is it to be taken?</p>
-              <label>
-                <span className="form-padding">Morning</span>
+              
+                <p>What time(s) of day is it to be taken? (Check each that applies)</p>
+                <label>
+                Morning
                 <input
                   title="Take it mornings"
                   name="early"
@@ -246,26 +218,24 @@ class New_Medication extends React.Component {
               </label>
 
               <Button
-                className="button-padding"
-                action={this.handleFormSubmit}
-                type={"primary"}
-                title={"Submit"}
 
-              />
+                      // onClick={this.handleFormSubmit}
+                      action={this.handleFormSubmit}
+                      type={"primary"}
+                      title={"Submit"}
+                      
+                    />
+
+                    
             </form>
 
           </Col>
         </Row>
       </Container>
-
-
-
-
+      
     );
   }
 }
-
-
-export default New_Medication;
+export default InputForm;
 
 
