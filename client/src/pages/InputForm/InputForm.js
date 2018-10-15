@@ -46,19 +46,7 @@ class InputForm extends Component {
       this.state.drugFreq ++
     }
 
-    // update the drugFreq based on how many checkmarks are checked
-    // if (this.state.early == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.middle == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.late == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
+  
 
 
     const { name, value } = event.target;
