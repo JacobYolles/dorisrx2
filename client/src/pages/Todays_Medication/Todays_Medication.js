@@ -29,6 +29,7 @@ class TodaysMedication extends Component {
   constructor(props) {
     super(props);
 
+<<<<<<< HEAD
     // component did mount goes below the states.
     this.state = {
       inventory: [],
@@ -41,6 +42,18 @@ class TodaysMedication extends Component {
     }
 
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+=======
+  // component did mount goes below the states.
+  this.state = {
+    inventory: [],
+    drugname: "",
+    currentQuantity: "",
+    bottleFullQuantity: "",
+    bottlePartialQuantity: "",
+    drugDose: "",
+    drugFrequency: "",
+    taken: false
+>>>>>>> 7ead6cddfbf7f5da54446b1b7062204e3f7e109e
   }
 
 
@@ -76,12 +89,29 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
-  handleFormSubmit(drugName, quantity, dose) {
+  handleFormSubmit(drugName, quantity, dose, id) {
     console.log(drugName);
     console.log(quantity);
     console.log(dose);
-    console.log(this.state);
+    console.log(id);
+    let updatedQuantity = quantity - dose;
+    let newQuantity = {
+      currentQuantity: updatedQuantity
+    }
+    console.log(newQuantity);
+    API2.putInventory(id, newQuantity).then( res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
+
+//   decrementQuantity = (id, num) => {
+//     API2.putInventory(id, num)
+//         .then(
+//           this.setState(this.state.inventory.currentQuantity = this.state.inventory.currentQuantity - this.state.inventory.drugDose) )
+//         .catch(err =>console.log(err));
+// }
 
   // pickImage = (drugForm)=> {
   //   let image;
@@ -133,8 +163,9 @@ class TodaysMedication extends Component {
 
                     <td>
                       <Button
+                        // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
-                        action={this.handleFormSubmit}
+                        action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                         type={"primary"}
                         title={"Taken"}
                       /></td>
@@ -169,7 +200,7 @@ class TodaysMedication extends Component {
 
                     <td><Button
                       className="tButton"
-                      action={this.handleFormSubmit}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                       type={"primary"}
                       title={"Taken"}
                     /></td>
@@ -202,12 +233,12 @@ class TodaysMedication extends Component {
 
                       <Link to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td><Button
-                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose)}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
 
                       type={"primary"}
                       title={"Taken"}
-                      drugName={inventory.drugName}
-                      quantity={inventory.currentQuantity}
+                      // drugName={inventory.drugName}
+                      // quantity={inventory.currentQuantity}
                     /></td>
                   </tr>
                 ))}
