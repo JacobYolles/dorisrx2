@@ -73,7 +73,7 @@ class ContactForm extends Component {
         <Row>
           <Col size="md-6">
            
-              <h1>Contact Inputs</h1>
+              <h1 class="new-M-h1">Contact Inputs</h1>
             
             <form className="table-background">
               

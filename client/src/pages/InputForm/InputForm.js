@@ -178,7 +178,7 @@ class InputForm extends Component {
               
                 <p>What time(s) of day is it to be taken? (Check each that applies)</p>
                 <label>
-                Morning
+                <span className="form-padding">Morning</span>
                 <input
                   title="Take it mornings"
                   name="early"
