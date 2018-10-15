@@ -30,13 +30,17 @@ const NavTabs = () => (
       Today's Medications
         </a>
 
+<<<<<<< HEAD
 <a className="navbar-brand" href="/MedicationInventory">
       Medication Inventory
         </a>
 
         <a className="navbar-brand" href="/Detail">
+=======
+        {/* <a className="navbar-brand" href="/Detail">
+>>>>>>> a2ad63edf1849241fe34dfed23511ec32212f898
       Medication Details
-        </a>
+        </a> */}
 
 </nav>
 

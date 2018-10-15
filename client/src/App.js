@@ -8,8 +8,12 @@ import Reports from "./pages/Reports"
 import Caregiver from "./pages/Caregiver";
 import TodaysMedication from "./pages/Todays_Medication";
 import Detail from "./pages/Detail";
+<<<<<<< HEAD
 import NewMedication from "./pages/New_Medication";
 import MedicationInventory from "./pages/MedicationInventory";
+=======
+import New_Medication from "./pages/New_Medication";
+>>>>>>> a2ad63edf1849241fe34dfed23511ec32212f898
 import { Col, Row, Container } from "reactstrap";
 
 
@@ -26,7 +30,7 @@ const App = () => (
           <Route exact path="/reports" component={Reports} />
           <Route path="/user" component={User} />
           <Route path="/caregiver" component={Caregiver} />
-          <Route exact path="/New_Medication" component={NewMedication} />
+          <Route exact path="/New_Medication" component={New_Medication} />
           <Route exact path="/Todays_Medication" component={TodaysMedication} />
           <Route exact path="/MedicationInventory" component={MedicationInventory} />
           <Route exact path="/Detail" component={Detail} />
