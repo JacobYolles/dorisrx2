@@ -55,6 +55,8 @@ th {
 th {
       text-align: center;
       width: 33%;
+      
+      
   }
 
 td, th {    
@@ -79,6 +81,3 @@ td {
     border-radius: 25px;
     min-height: 500px;
   }
-
-
-
