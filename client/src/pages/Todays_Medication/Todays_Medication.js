@@ -149,7 +149,6 @@ class TodaysMedication extends Component {
                     <td><Link
                     className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
-
                     <td>
                       <Button
                         // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
