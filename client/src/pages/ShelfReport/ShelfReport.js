@@ -123,7 +123,7 @@ class ShelfReport extends Component {
                                         </Link></td>
                                         
                                         <td>
-                                            <Link to="/New_Medication">{inventory.currentQuantity - (inventory.drugDose * inventory.drugFrequency)} Days</Link></td>
+                                            <Link to="/New_Medication">{inventory.currentQuantity - (inventory.drugDose * inventory.drugFrequency)}</Link></td>
 
 
                                     </tr>

@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 import Input from "../../components/input/input";
 import API from "../../utilities/API";
-import API4 from "../../utilities/API4";
+// import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ class InputForm extends Component {
         early:false, 
         middle: false, 
         late: false, 
-        currentQty: 0
+        currentQty: 30
     };
     
   
@@ -45,8 +45,6 @@ class InputForm extends Component {
       event.target.value = true
       this.state.drugFreq ++
     }
-
-  
 
 
     const { name, value } = event.target;
@@ -89,6 +87,11 @@ class InputForm extends Component {
 
 
   render() {
+
+    const style = {
+        
+    }
+
     return (
 
       <Container fluid>

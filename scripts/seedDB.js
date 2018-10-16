@@ -85,7 +85,7 @@ const DrugSeed = [
         early: "true",
         middle: "false",
         late: "true",
-        currentQty: 45
+        currentQty: 15
         },
         {
         ndcNum: "23456",
@@ -103,7 +103,7 @@ const DrugSeed = [
         early: "true",
         middle: "false",
         late: "true",
-        currentQty: 50
+        currentQty: 20
         },
         {
         ndcNum: "23456",
@@ -542,7 +542,7 @@ const InventorySeed = [
 
     {
         drugName: "Amoxicillin",
-        currentQuantity: 83,
+        currentQuantity: 42,
         taken: false,
         drugDose: 2,
         drugFrequency: 1,
@@ -553,7 +553,7 @@ const InventorySeed = [
         },
         {
         drugName: "Allopurinol",
-        currentQuantity: 09,
+        currentQuantity: 12,
         taken: false,
         drugDose: 1,
         drugFrequency: 1,
@@ -586,7 +586,7 @@ const InventorySeed = [
         },
         {
         drugName: "Ramelteon",
-        currentQuantity: 4,
+        currentQuantity: 8,
         taken: false,
         drugDose: 2,
         drugFrequency: 2,

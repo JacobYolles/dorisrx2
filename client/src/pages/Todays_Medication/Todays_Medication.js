@@ -5,6 +5,7 @@ import "./Todays_Medication.css";
 // import CheckBox from "../../components/checkBox/CheckBox";
 // import TextArea from "../../components/textArea/TextArea";
 // import Select from "../../components/select/Select";
+// import Container from "../../components/container/Container";
 import Button from "../../components/button/Button";
 import { Col, Row, Container } from "reactstrap";
 import API from "../../utilities/API";
@@ -38,7 +39,8 @@ class TodaysMedication extends Component {
     bottlePartialQuantity: "",
     drugDose: "",
     drugFrequency: "",
-    taken: false
+    taken: false,
+    shown: true
   }
 
   this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -94,20 +96,11 @@ class TodaysMedication extends Component {
     })
   }
 
-//   decrementQuantity = (id, num) => {
-//     API2.putInventory(id, num)
-//         .then(
-//           this.setState(this.state.inventory.currentQuantity = this.state.inventory.currentQuantity - this.state.inventory.drugDose) )
-//         .catch(err =>console.log(err));
-// }
-
-  // pickImage = (drugForm)=> {
-  //   let image;
-  //   if(drugForm === 'capsule') {
-  //     image = 'images/capsule.png'
-  //   }
-  //   return image;
-  // }
+  toggle() {
+		this.setState({
+			shown: !this.state.shown
+		});
+	}
 
 
 
@@ -116,13 +109,23 @@ class TodaysMedication extends Component {
     const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
     const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
     // console.log("mid mid", mid);
+
+    var shown = {
+			display: this.state.shown ? "block" : "none"
+		};
+		
+		var hidden = {
+			display: this.state.shown ? "none" : "block"
+		}
+
+
     return (
 
       <Fragment>
-
+      <Container fluid>
         <Row>
           <Col className="test col-md-4">
-            <h1 id="times">Morning Medications</h1>
+            <h1 id="times">Morning Meds</h1>
             <table className="transparent-tables">
               <thead>
                 <tr>
@@ -150,11 +153,13 @@ class TodaysMedication extends Component {
 
                     <td>
                       <Button
+                      
                         // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
                         action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                         type={"primary"}
                         title={"Taken"}
+                        
                       /></td>
                   </tr>
                 ))}
@@ -164,7 +169,7 @@ class TodaysMedication extends Component {
           </Col>
 
           <Col className="test col-md-4">
-            <h1 id="times">Midday Medications</h1>
+            <h1 id="times">Mid-day Meds</h1>
             <table className="transparent-tables">
               <thead>
                 <tr>
@@ -201,7 +206,7 @@ class TodaysMedication extends Component {
             </table>
           </Col>
           <Col className="test col-md-4">
-            <h1 id="times">Evening Medications</h1>
+            <h1 id="times">Evening Meds</h1>
             <table className="transparent-tables">
               <thead>
                 <tr>
@@ -237,7 +242,7 @@ class TodaysMedication extends Component {
             </table>
           </Col>
         </Row>
-
+      </Container>
       </Fragment>
 
     )
