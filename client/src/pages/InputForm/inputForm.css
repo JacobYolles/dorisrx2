@@ -10,7 +10,7 @@
   }
 
   .form-padding {
-      margin-left: 10px;
+      margin-left: 20px;
       margin-right: 3px;
       margin-top: 3px;
   }
@@ -22,4 +22,5 @@
 .new-M-h1 {
     color: white;
     font-family: 'Crimson Text', serif;
+    /* text-align: center; */
 }

@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs/NavTabs";
+
+
 import Footer from "./components/Footer/Footer";
 import Authentication from "./pages/Authentication";
 import User from "./pages/User";
@@ -20,7 +22,7 @@ import { Col, Row, Container } from "reactstrap";
 const App = () => (
   <Router>
     <Fragment>
-      <NavTabs />
+   <NavTabs />
       <Container>
       <Row>
         <Col size="md-6">

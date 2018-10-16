@@ -1,0 +1,24 @@
+#modalButtons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#modalDrugBody {
+    height: 450px;
+    overflow-y: scroll;
+}
+
+#modalContainerTwo {
+    margin-top: 80px;
+    border-radius: 8px;
+}
+
+#modalHeader {
+    background: #327ab7;
+    color: ivory;
+}
+
+#modalFooter {
+    background: #327ab7;
+}
+

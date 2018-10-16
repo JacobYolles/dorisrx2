@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 import Input from "../../components/input/input";
 import API from "../../utilities/API";
-import API4 from "../../utilities/API4";
+// import API4 from "../../utilities/API4";
 import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ class InputForm extends Component {
         early:false, 
         middle: false, 
         late: false, 
-        currentQty: 0
+        currentQty: 30
     };
     
   
@@ -45,20 +45,6 @@ class InputForm extends Component {
       event.target.value = true
       this.state.drugFreq ++
     }
-
-    // update the drugFreq based on how many checkmarks are checked
-    // if (this.state.early == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.middle == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.late == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
 
 
     const { name, value } = event.target;
@@ -101,6 +87,11 @@ class InputForm extends Component {
 
 
   render() {
+
+    const style = {
+        
+    }
+
     return (
 
       <Container fluid>
@@ -190,7 +181,7 @@ class InputForm extends Component {
               
                 <p>What time(s) of day is it to be taken? (Check each that applies)</p>
                 <label>
-                Morning
+                <span className="form-padding">Morning</span>
                 <input
                   title="Take it mornings"
                   name="early"
