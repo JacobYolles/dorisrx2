@@ -1,83 +1,68 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Col, Row, Container, Jumbotron } from "reactstrap";
 import API4 from "../../utilities/API4";
+import ModalTwo from "../../components/modalTwo"
+import "./detail.css"
+
+
 
 class Detail extends Component {
-  state = {
-    drugsValues: [],  
-    warnings: "",
-    directions: "",
-    usage: ""
-  };
-  // When this component mounts, grab the book with the _id of this.props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
-  componentDidMount(){
-    this.loadDrugs();
-   this.fdaData();
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      drugName: props.location.state.drugName
+    }
   }
 
+  componentDidMount() {
+    this.loadDrugs(this.state.drugName);
 
-  fdaData = () => {
-      API4.getFdaDataValue(tylenol) 
-          .then(res => {
-              console.log({drugsValues})
-
-
-
-        })
-      
   }
-
-  deleteFdaValue
 
   loadDrugs = () => {
-    API.searchFDA() 
-    .then(res => {
-      console.log({ warnings: res.data.results[0].warnings, directions: res.data.results[0].dosage_and_administration, usage: res.data.results[0].indications_and_usage})
-      
-      this.setState({ "warnings": res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+    API4.getFdaDataValue(this.state.drugName)
+      .then(res => {
 
-    })
-    .catch(err => console.log(err));
-      
+        this.setState({ "brand_name": res.data.results[0].openfda.brand_name, "warnings": res.data.results[0].warnings_and_cautions || res.data.results[0].warnings, "directions": res.data.results[0].dosage_and_administration, "usage": res.data.results[0].indications_and_usage })
+        console.log(this.state)
 
+
+      })
+      .catch(err => console.log(err));
   }
 
-//   loadFDA = () => {
-
-
-//   }
-
   render() {
-    return (
-      <Container fluid>
-        <Row>
-          <Col size="md-12">
-            <Jumbotron>
-              <h1>
-                {this.state.book.title} by {this.state.book.author}
-              </h1>
-            </Jumbotron>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h1>Synopsis</h1>
-              <p>
-                {this.state.book.synopsis}
-              </p>
-            </article>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
-          </Col>
-        </Row>
-      </Container>
-    );
+
+    if (this.state.brand_name) {
+      return (
+
+        <ModalTwo>
+          <article>
+            <p>
+              <strong>Medication:</strong><br></br>{this.state.drugName}<br></br><br></br>
+              <strong>Usage:</strong><br></br>{this.state.usage}<br></br><br></br>
+              <strong>Instructions:</strong><br></br>{this.state.directions}<br></br><br></br>
+              <strong>Warnings:</strong><br></br>{this.state.warnings}<br></br><br></br>
+            </p>
+          </article>
+        </ModalTwo>
+      );
+    } else {
+      return (
+
+        <ModalTwo>
+          <article>
+            <p>
+              <strong>Medication:</strong><br></br>{this.state.drugName}<br></br><br></br>
+              <strong>Usage:</strong><br></br>{"Sorry, this information is not available!"}<br></br><br></br>
+              <strong>Instructions:</strong><br></br>{"Sorry, this information is not available!"}<br></br><br></br>
+              <strong>Warnings:</strong><br></br>{"Sorry, this information is not available!"}<br></br><br></br>
+            </p>
+          </article>
+        </ModalTwo>
+
+      )
+    }
   }
 }
 

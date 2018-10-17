@@ -22,11 +22,32 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
+    console.log("inside controler");
+    req.body.currentQuantity = Number(req.body.currentQuantity)
+    
     db.Inventory
       .findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => {
+        console.log("req.body: ", req.body);
+        res.json(dbModel)
+      })
       .catch(err => res.status(422).json(err));
   },
+
+
+  // updateQuantity: function(req, res) {
+  //   console.log("inside controler");
+  //   req.body.currentQuantity = Number(req.body.currentQuantity)
+  //   db.Inventory
+  //     .findOneAndUpdate({ _id: req.params.id }, req.body)
+  //     .then(dbModel => {
+  //       console.log("req.body: ", req.body);
+  //       res.json(dbModel)
+  //     })
+  //     .catch(err => res.status(422).json(err));
+  // },
+
+
   remove: function(req, res) {
     db.Inventory
       .findById({ _id: req.params.id })

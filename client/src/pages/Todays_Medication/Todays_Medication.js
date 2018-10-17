@@ -32,11 +32,14 @@ class TodaysMedication extends Component {
   // component did mount goes below the states.
   this.state = {
     inventory: [],
+    disabled: false,
     drugname: "",
+    currentQuantity: "",
     bottleFullQuantity: "",
     bottlePartialQuantity: "",
     drugDose: "",
     drugFrequency: "",
+    taken: false
   }
 
   this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -54,10 +57,12 @@ class TodaysMedication extends Component {
         this.setState({
           inventory: res.data,
           drugName: "",
+          currentQuantity: "",
           bottleFullQuantity: "",
           bottlePartialQuantity: "",
           drugDose: "",
           drugFrequency: "",
+          taken: ""
         })
       )
       .catch(err => console.log(err))
@@ -73,12 +78,28 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
-  handleFormSubmit(drugName, quantity, dose) {
-    console.log(drugName);
+  handleFormSubmit(drugName, quantity, dose, id) {
     console.log(quantity);
     console.log(dose);
-    console.log(this.state);
+    console.log(id);
+    let updatedQuantity = quantity - dose;
+    let newQuantity = {
+      currentQuantity: updatedQuantity
+    }
+    console.log(newQuantity);
+    API2.putInventory(id, newQuantity).then( res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
+
+//   decrementQuantity = (id, num) => {
+//     API2.putInventory(id, num)
+//         .then(
+//           this.setState(this.state.inventory.currentQuantity = this.state.inventory.currentQuantity - this.state.inventory.drugDose) )
+//         .catch(err =>console.log(err));
+// }
 
   // pickImage = (drugForm)=> {
   //   let image;
@@ -94,6 +115,8 @@ class TodaysMedication extends Component {
     const early = this.state.inventory.filter(drug => (drug.early === true || drug.early === "true"));
     const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
     const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
+
+   
     // console.log("mid mid", mid);
     return (
 
@@ -101,11 +124,11 @@ class TodaysMedication extends Component {
 
         <Row>
           <Col className="test col-md-4">
-            <h1 id="times">early</h1>
-            <table className="users">
+            <h1 id="times">Morning Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
-                  <th>Drug Name</th>
+                  <th width="100">Drug Name</th>
                   <th>Dose</th>
                   <th>Drug Type</th>
                   <th></th>
@@ -116,21 +139,25 @@ class TodaysMedication extends Component {
                   //   key={inventory._id}
 
                   <tr key={inventory._id}>
+
                     <td><Link
-                      className="link"
-                      to="/New_Medication">{inventory.drugName}</Link></td>
+                    className="link"
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
                     <td><Link
-                      className="link"
+                    className="link"
                       to="/New_Medication">{inventory.drugDose}</Link></td>
                     <td><Link
-                      className="link"
+                    className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td>
                       <Button
+                        // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
-                        action={this.handleFormSubmit}
+                        action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
+                        disabled={!this.state.value}
                         type={"primary"}
                         title={"Taken"}
+                        
                       /></td>
                   </tr>
                 ))}
@@ -140,8 +167,8 @@ class TodaysMedication extends Component {
           </Col>
 
           <Col className="test col-md-4">
-            <h1 id="times">mid</h1>
-            <table className="users">
+            <h1 id="times">Midday Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -153,18 +180,20 @@ class TodaysMedication extends Component {
               <tbody>
                 {mid.map(inventory => (
                   <tr key={inventory._id}>
+
                     <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugName}</Link></td>
-                    <td><Link
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                      <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugDose}</Link></td>
-                    <td><Link
+                      to="/Detail">{inventory.drugDose}</Link></td>
+                      <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugForm}</Link></td>
+                      to="/Detail">{inventory.drugForm}</Link></td>
+
                     <td><Button
                       className="tButton"
-                      action={this.handleFormSubmit}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                       type={"primary"}
                       title={"Taken"}
                     /></td>
@@ -175,8 +204,8 @@ class TodaysMedication extends Component {
             </table>
           </Col>
           <Col className="test col-md-4">
-            <h1 id="times">late</h1>
-            <table className="users">
+            <h1 id="times">Evening Medications</h1>
+            <table className="transparent-tables">
               <thead>
                 <tr>
                   <th>Drug Name</th>
@@ -187,21 +216,23 @@ class TodaysMedication extends Component {
               <tbody>
                 {late.map(inventory => (
                   <tr key={inventory._id}>
-                <td><Link
+
+                   <td><Link
                       className="link"
-                      to="/New_Medication">{inventory.drugName}</Link></td>
-                <td><Link
+                      to={{ pathname: "/Detail", state: { drugName: inventory.drugName } }}>{inventory.drugName}</Link></td>
+                    <td><Link
                       className="link"
                       to="/New_Medication">{inventory.drugDose}</Link></td>
-                <td><Link
+                    <td><Link
                       className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
-                <td><Button
-                      className="tButton"
-                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory, inventory.drugDose)}
+                    <td><Button
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
+
                       type={"primary"}
                       title={"Taken"}
-                      drugName={inventory.drugName}
+                      // drugName={inventory.drugName}
+                      // quantity={inventory.currentQuantity}
                     /></td>
                   </tr>
                 ))}

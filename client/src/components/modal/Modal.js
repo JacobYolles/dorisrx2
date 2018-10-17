@@ -21,32 +21,34 @@ class ModalOne extends Component {
   render(props) {
     return (
 
-      <div className="modal-container">
 
-        <Modal
-          show={this.state.show}
-          container={this}
-          aria-labelledby="contained-modal-title"
-        >
-          <Modal.Header>
-            <Modal.Title id="contained-modal-title">
-              Welcome to DorisRx
+      
+      <Modal id = "modalContainerOne"
+        show={this.state.show}
+        container={this}
+        aria-labelledby="contained-modal-title"
+      >
+        <Modal.Header id = "modalHeader">
+          <Modal.Title id="contained-modal-title">
+           <span id = "title">DorisRx</span>
                 </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
+        </Modal.Header>
+        <Modal.Body>
 
-            {this.props.children}
+          {this.props.children}
 
-          </Modal.Body>
-          <Modal.Footer>
-            <div id ="modalButtons">
-              <Button onClick={this.handleHide} href = "/reports">Log In</Button>
-              <Button onClick={this.handleHide} href = "/caregiver">New User</Button>
-            </div>
+        </Modal.Body>
+        <Modal.Footer id = "modalFooter">
+          <div id="modalButtons">
+            <Button onClick={this.handleHide} href="/Todays_Medication">Log In</Button>
+            <Button onClick={this.handleHide} href="/New_Medication">New User</Button>
+          </div>
 
-          </Modal.Footer>
-        </Modal>
-      </div>
+        </Modal.Footer>
+
+      </Modal>
+     
+
     );
   }
 }
