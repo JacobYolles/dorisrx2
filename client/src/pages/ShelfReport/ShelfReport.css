@@ -4,6 +4,13 @@ body {
     background-size: cover;
     
 }
+
+a {
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+}
+
 #root {
     height: 100%;
 }
@@ -12,7 +19,7 @@ div.column {
     height: 100%;
 }
 .listItem div  {
-   color: blue;
+   color: black;
 }
 .test {
    
@@ -29,6 +36,8 @@ th {
 .link {
     color: black;
     font-size: 16px;
+    color: black;
+    font-family: 'Crimson Text', serif;
    
     
   }
@@ -54,7 +63,7 @@ td {
 }
 #times {
     color: white;
-    text-align: center;
+    text-align: left;
     font-family: 'Crimson Text', serif;
 }
 .transparent-tables {
@@ -62,6 +71,7 @@ td {
     opacity: 0.6;
     border-radius: 25px;
     min-height: 500px;
+    margin-bottom: 100px;
     
     
   }

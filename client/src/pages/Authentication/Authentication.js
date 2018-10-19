@@ -71,8 +71,7 @@ class Authentication extends Component {
       <Modal>
         
           <form>
-
-            <Input
+          <Input
               id="username"
               value={this.state.username}
               name="username"
@@ -88,14 +87,16 @@ class Authentication extends Component {
               type="password"
               placeholder="Password"
             />
-            <Input
+            {/* <Input
               value={this.state.email}
               name="email"
               onChange={this.handleInputChange}
               type="text"
               placeholder="Email"
-            />
-   
+            /> */}
+
+
+
 
 
           </form>
