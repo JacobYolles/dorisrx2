@@ -19,7 +19,10 @@ const NavTabs = () => (
       New Medication
         </a>
 
+<<<<<<< HEAD
         
+=======
+>>>>>>> 5460cc173b069e797e905c7e3df3831e88137718
         <a className="navbar-brand" href="/ContactForm">
       Contacts
         </a>

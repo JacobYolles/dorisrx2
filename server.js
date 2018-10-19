@@ -20,7 +20,11 @@ app.use(routes);
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/dorisrx");
 
 app.listen(PORT, function() {
+<<<<<<< HEAD
   console.log(`🌎 HEY ==> API Server now listening on PORT ${PORT}!`)
+=======
+  console.log(`🌎 HEY! ==> API Server now listening on PORT ${PORT}!`)
+>>>>>>> 5460cc173b069e797e905c7e3df3831e88137718
 });
 
 
