@@ -2,9 +2,9 @@ import React from "react";
 
 const Caregiver = () => (
   <div>
-    <h1>Daily Prescription Log</h1>
+    <h1>This project is dedicated to Doris</h1>
     <p>
-     Status Check
+    <img src="assets/images/doris.png"/> 
     </p>
   </div>
 );
