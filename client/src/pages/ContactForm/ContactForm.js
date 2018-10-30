@@ -7,6 +7,7 @@ import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
 // import {  FormBtn } from "../../components/Form";
+import "./ContactForm.css";
 
 
 
@@ -72,9 +73,9 @@ class ContactForm extends Component {
         <Row>
           <Col size="md-6">
            
-              <h1>Contact Inputs</h1>
+              <h1 class="new-M-h1">Contact Inputs</h1>
             
-            <form>
+            <form className="table-background">
               
               <Input
                 title="Pharmacy Name"

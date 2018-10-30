@@ -3,7 +3,13 @@ body {
     background-image: url("https://image.ibb.co/bZ41Op/blue_squares_powerpoint_backgrounds.jpg");
     background-size: cover;
     
+    
 }
+
+h1 {
+    padding-top: 50px;
+}
+
 
 #root {
     height: 100%;
@@ -13,7 +19,6 @@ body {
 div.column {
     width: 100%;
     height: 100%;
-
 }
 
 .listItem div  {
@@ -30,16 +35,11 @@ th {
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     width: 200px;
-    
-    
 }
-
 
 .link {
     color: black;
     font-size: 16px;
-   
-    
   }
 
 .link:hover {
@@ -49,12 +49,14 @@ th {
   table {
     border-collapse: separate;
     border-spacing: 10px;
-    
+    margin-bottom: 100px;
   }
 
 th {
       text-align: center;
       width: 33%;
+      
+      
   }
 
 td, th {    
@@ -70,7 +72,15 @@ td {
 #times {
     color: white;
     text-align: center;
+    font-size: 40px;
     font-family: 'Crimson Text', serif;
+}
+
+#overMessage {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Crimson Text", serif;
 }
 
 .transparent-tables {
@@ -78,9 +88,4 @@ td {
     opacity: 0.6;
     border-radius: 25px;
     min-height: 500px;
-    
-    
   }
-
-
-

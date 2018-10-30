@@ -32,7 +32,9 @@ class TodaysMedication extends Component {
   // component did mount goes below the states.
   this.state = {
     inventory: [],
+    disabled: false,
     drugname: "",
+    currentQuantity: "",
     bottleFullQuantity: "",
     bottlePartialQuantity: "",
     drugDose: "",
@@ -55,6 +57,7 @@ class TodaysMedication extends Component {
         this.setState({
           inventory: res.data,
           drugName: "",
+          currentQuantity: "",
           bottleFullQuantity: "",
           bottlePartialQuantity: "",
           drugDose: "",
@@ -75,12 +78,28 @@ class TodaysMedication extends Component {
       .catch(err => console.log(err))
   }
 
-  handleFormSubmit(drugName, quantity, dose) {
-    console.log(drugName);
+  handleFormSubmit(drugName, quantity, dose, id) {
     console.log(quantity);
     console.log(dose);
-    console.log(this.state);
+    console.log(id);
+    let updatedQuantity = quantity - dose;
+    let newQuantity = {
+      currentQuantity: updatedQuantity
+    }
+    console.log(newQuantity);
+    API2.putInventory(id, newQuantity).then( res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
+
+//   decrementQuantity = (id, num) => {
+//     API2.putInventory(id, num)
+//         .then(
+//           this.setState(this.state.inventory.currentQuantity = this.state.inventory.currentQuantity - this.state.inventory.drugDose) )
+//         .catch(err =>console.log(err));
+// }
 
   // pickImage = (drugForm)=> {
   //   let image;
@@ -96,11 +115,13 @@ class TodaysMedication extends Component {
     const early = this.state.inventory.filter(drug => (drug.early === true || drug.early === "true"));
     const mid = this.state.inventory.filter(drug => (drug.mid === true || drug.mid === "true"));
     const late = this.state.inventory.filter(drug => (drug.late === true || drug.late === "true"));
+
+   
     // console.log("mid mid", mid);
     return (
 
       <Fragment>
-
+      <h1 id ="overMessage"> Medication Overview:</h1>
         <Row>
           <Col className="test col-md-4">
             <h1 id="times">Morning Medications</h1>
@@ -128,13 +149,15 @@ class TodaysMedication extends Component {
                     <td><Link
                     className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
-
                     <td>
                       <Button
+                        // onClick={() => this.decrementQuantity(inventory._id, inventory.currentQuantity, inventory.drugDose)}
                         className="tButton"
-                        action={this.handleFormSubmit}
+                        action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
+                        disabled={!this.state.value}
                         type={"primary"}
                         title={"Taken"}
+                        
                       /></td>
                   </tr>
                 ))}
@@ -170,7 +193,7 @@ class TodaysMedication extends Component {
 
                     <td><Button
                       className="tButton"
-                      action={this.handleFormSubmit}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
                       type={"primary"}
                       title={"Taken"}
                     /></td>
@@ -204,12 +227,12 @@ class TodaysMedication extends Component {
                       className="link"
                       to="/New_Medication">{inventory.drugForm}</Link></td>
                     <td><Button
-                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose)}
+                      action={this.handleFormSubmit.bind(this, inventory.drugName, inventory.currentQuantity, inventory.drugDose, inventory._id)}
 
                       type={"primary"}
                       title={"Taken"}
-                      drugName={inventory.drugName}
-                      quantity={inventory.currentQuantity}
+                      // drugName={inventory.drugName}
+                      // quantity={inventory.currentQuantity}
                     /></td>
                   </tr>
                 ))}
