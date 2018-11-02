@@ -7,7 +7,7 @@ import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
 // import {  FormBtn } from "../../components/Form";
-import "./inputForm.css";
+import "./InputForm.css";
 
 
 
