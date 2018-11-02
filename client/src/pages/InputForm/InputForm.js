@@ -7,6 +7,7 @@ import { Col, Row, Container } from "reactstrap";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
 // import {  FormBtn } from "../../components/Form";
+import "./inputForm.css";
 
 
 
@@ -45,19 +46,7 @@ class InputForm extends Component {
       this.state.drugFreq ++
     }
 
-    // update the drugFreq based on how many checkmarks are checked
-    // if (this.state.early == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.middle == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
-    // if (this.state.late == "true"){
-    //   this.state.drugFreq = this.state.drugFreq +1
-    // }
-
+  
 
 
     const { name, value } = event.target;
@@ -96,44 +85,8 @@ class InputForm extends Component {
 
 
 
-class New_Medication extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ndcNum: "",
-      rxNum: "",
-      pharmName: "",
-      doctorName: "",
-      drugName: "",
-      drugForm: "",
-      drugFormSizeAndMeasure: "",
-      currentQty: "",
-      bottleFullQty: "",
-      rxDiscard: "",
-      rxReorder: "",
-      drugDose: "",
-      drugFreq: "",
-      early: "",
-      middle: "",
-      late: ""
-
-    };
-    // console.log("state-early :" + this.state.early + "state-middle :" + this.state.middle + "state-late :" + this.state.late );
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-
-  }
 
 
-
-    this.setState({
-      [name]: value
-    });
-    this.showState()
-  }
-  showState() {
-    console.log("state-early :" + this.state.early + "  state-middle :" + this.state.middle + "  state-late :" + this.state.late);
-  }
 
   render() {
     return (
@@ -142,32 +95,34 @@ class New_Medication extends React.Component {
         <Row>
           <Col size="md-6">
 
-            <h1 className="new-M-h1">Prescription Bottle Inputter</h1>
+            <h1 className="new-M-h1">Medication Input</h1>
+
 
             <form className="table-background">
+            <p> Please insert your medication information below:</p>
               <Input
-                title="Prescription Number"
+                title="Prescription Number:"
                 value={this.state.rxNum}
                 onChange={this.handleInputChange}
                 name="rxNum"
                 placeholder="Prescription Number"
               />
               <Input
-                title="Pharmacy Name"
+                title="Pharmacy Name:"
                 value={this.state.pharmName}
                 onChange={this.handleInputChange}
                 name="pharmName"
                 placeholder="Pharmacy Name"
               />
               <Input
-                title="Doctor Name"
+                title="Doctors Name:"
                 value={this.state.doctorName}
                 onChange={this.handleInputChange}
                 name="doctorName"
                 placeholder="Doctor Name"
               />
               <Input
-                title="Drug Name"
+                title="Drug Name:"
                 value={this.state.drugName}
                 onChange={this.handleInputChange}
                 name="drugName"
@@ -189,7 +144,7 @@ class New_Medication extends React.Component {
                 placeholder="Drug size, measure and type (ex: 150 mg tablet ) "
               />
               <Input
-                title="Bottle capacity when full"
+                title="Bottle capacity when full:"
                 value={this.state.bottleFullQty}
                 onChange={this.handleInputChange}
                 name="bottleFullQty"
@@ -205,7 +160,7 @@ class New_Medication extends React.Component {
                 placeholder="If this is not a full bottle, how many are left? (otherwise leave blank)"
               />
               <Input
-                title="Discard Date"
+                title="Discard Date:"
                 value={this.state.rxDiscard}
                 onChange={this.handleInputChange}
                 name="rxDiscard"
@@ -213,23 +168,16 @@ class New_Medication extends React.Component {
                 placeholder="What is the discard date?"
               />
               <Input
-                title="Reorder Date"
+                title="Reorder Date:"
                 value={this.state.rxReorder}
                 onChange={this.handleInputChange}
                 name="rxReorder"
                 inputType="date"
                 placeholder="What is the re-order date?"
               />
-              <Input
-                title="How many to take in each dose"
-                value={this.state.drugDose}
-                onChange={this.handleInputChange}
-                name="drugDose"
-                inputType="number"
-                placeholder="How many in each dose?"
-              />
-              <p>What time(s) of day is it to be taken?</p>
-              <label>
+              
+                <p>What time(s) of day is it to be taken? (Check each that applies)</p>
+                <label>
                 <span className="form-padding">Morning</span>
                 <input
                   title="Take it mornings"
@@ -258,24 +206,22 @@ class New_Medication extends React.Component {
               </label>
 
               <Button
-                className="button-padding"
-                action={this.handleFormSubmit}
-                type={"primary"}
-                title={"Submit"}
 
-              />
+                      // onClick={this.handleFormSubmit}
+                      action={this.handleFormSubmit}
+                      type={"primary"}
+                      title={"Submit"}
+                      
+                    />
+
+                    
             </form>
 
           </Col>
         </Row>
       </Container>
-
-
-
-
+      
     );
   }
 }
 export default InputForm;
-
-
